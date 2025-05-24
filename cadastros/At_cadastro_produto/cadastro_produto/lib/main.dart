@@ -50,9 +50,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Cadastro de Produto',
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-      ),
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
       home: ListaProdutosScreen(produtos: _produtos, onAdd: _addProduto),
     );
   }
@@ -62,7 +60,11 @@ class ListaProdutosScreen extends StatelessWidget {
   final List<Produto> produtos;
   final Function(Produto) onAdd;
 
-  const ListaProdutosScreen({super.key, required this.produtos, required this.onAdd});
+  const ListaProdutosScreen({
+    super.key,
+    required this.produtos,
+    required this.onAdd,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -93,8 +95,12 @@ class ListaProdutosScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 4),
-                  Text('Preço de compra: ${produto.precoCompra.toStringAsFixed(2)}'),
-                  Text('Preço de venda: ${produto.precoVenda.toStringAsFixed(2)}'),
+                  Text(
+                    'Preço de compra: ${produto.precoCompra.toStringAsFixed(2)}',
+                  ),
+                  Text(
+                    'Preço de venda: ${produto.precoVenda.toStringAsFixed(2)}',
+                  ),
                   Text('Quantidade: ${produto.quantidade}'),
                   Text('Categoria: ${produto.categoria}'),
                   Text('Descrição: ${produto.descricao}'),
@@ -104,22 +110,27 @@ class ListaProdutosScreen extends StatelessWidget {
                       produto.imagemUrl,
                       height: 80,
                       fit: BoxFit.cover,
-                      errorBuilder: (context, error, stackTrace) =>
-                          const Icon(Icons.broken_image, size: 60),
+                      errorBuilder:
+                          (context, error, stackTrace) =>
+                              const Icon(Icons.broken_image, size: 60),
                     ),
                   const SizedBox(height: 8),
                   Row(
                     children: [
-                      Icon(produto.ativo ? Icons.check_circle : Icons.cancel,
-                          color: produto.ativo ? Colors.green : Colors.red),
+                      Icon(
+                        produto.ativo ? Icons.check_circle : Icons.cancel,
+                        color: produto.ativo ? Colors.green : Colors.red,
+                      ),
                       const SizedBox(width: 4),
                       Text('Produto Ativo: ${produto.ativo ? "Sim" : "Não"}'),
                     ],
                   ),
                   Row(
                     children: [
-                      Icon(Icons.local_offer,
-                          color: produto.promocao ? Colors.orange : Colors.grey),
+                      Icon(
+                        Icons.local_offer,
+                        color: produto.promocao ? Colors.orange : Colors.grey,
+                      ),
                       const SizedBox(width: 4),
                       Text('Em Promoção: ${produto.promocao ? "Sim" : "Não"}'),
                     ],
@@ -142,9 +153,7 @@ class ListaProdutosScreen extends StatelessWidget {
         onPressed: () async {
           final novoProduto = await Navigator.push<Produto>(
             context,
-            MaterialPageRoute(
-              builder: (_) => const CadastroProdutoScreen(),
-            ),
+            MaterialPageRoute(builder: (_) => const CadastroProdutoScreen()),
           );
           if (novoProduto != null) {
             onAdd(novoProduto);
@@ -180,7 +189,7 @@ class _CadastroProdutoScreenState extends State<CadastroProdutoScreen> {
     'Roupas',
     'Alimentos',
     'Livros',
-    'Outros'
+    'Outros',
   ];
 
   @override
@@ -208,7 +217,8 @@ class _CadastroProdutoScreenState extends State<CadastroProdutoScreen> {
                   labelText: 'Nome do Produto',
                   prefixIcon: Icon(Icons.inventory_2),
                 ),
-                validator: (v) => v == null || v.isEmpty ? 'Campo obrigatório' : null,
+                validator:
+                    (v) => v == null || v.isEmpty ? 'Campo obrigatório' : null,
               ),
               const SizedBox(height: 10),
               TextFormField(
@@ -218,7 +228,8 @@ class _CadastroProdutoScreenState extends State<CadastroProdutoScreen> {
                   prefixIcon: Icon(Icons.attach_money),
                 ),
                 keyboardType: TextInputType.number,
-                validator: (v) => v == null || v.isEmpty ? 'Campo obrigatório' : null,
+                validator:
+                    (v) => v == null || v.isEmpty ? 'Campo obrigatório' : null,
               ),
               const SizedBox(height: 10),
               TextFormField(
@@ -228,7 +239,8 @@ class _CadastroProdutoScreenState extends State<CadastroProdutoScreen> {
                   prefixIcon: Icon(Icons.price_change),
                 ),
                 keyboardType: TextInputType.number,
-                validator: (v) => v == null || v.isEmpty ? 'Campo obrigatório' : null,
+                validator:
+                    (v) => v == null || v.isEmpty ? 'Campo obrigatório' : null,
               ),
               const SizedBox(height: 10),
               TextFormField(
@@ -238,7 +250,8 @@ class _CadastroProdutoScreenState extends State<CadastroProdutoScreen> {
                   prefixIcon: Icon(Icons.numbers),
                 ),
                 keyboardType: TextInputType.number,
-                validator: (v) => v == null || v.isEmpty ? 'Campo obrigatório' : null,
+                validator:
+                    (v) => v == null || v.isEmpty ? 'Campo obrigatório' : null,
               ),
               const SizedBox(height: 10),
               TextFormField(
@@ -247,24 +260,30 @@ class _CadastroProdutoScreenState extends State<CadastroProdutoScreen> {
                   labelText: 'Descrição',
                   prefixIcon: Icon(Icons.description),
                 ),
-                validator: (v) => v == null || v.isEmpty ? 'Campo obrigatório' : null,
+                validator:
+                    (v) => v == null || v.isEmpty ? 'Campo obrigatório' : null,
                 maxLines: 2,
               ),
               const SizedBox(height: 10),
               DropdownButtonFormField<String>(
                 value: _categoriaSelecionada,
-                items: _categorias
-                    .map((cat) => DropdownMenuItem(
-                          value: cat,
-                          child: Text(cat),
-                        ))
-                    .toList(),
+                items:
+                    _categorias
+                        .map(
+                          (cat) =>
+                              DropdownMenuItem(value: cat, child: Text(cat)),
+                        )
+                        .toList(),
                 onChanged: (v) => setState(() => _categoriaSelecionada = v),
                 decoration: const InputDecoration(
                   labelText: 'Categoria',
                   prefixIcon: Icon(Icons.category),
                 ),
-                validator: (v) => v == null || v.isEmpty ? 'Selecione uma categoria' : null,
+                validator:
+                    (v) =>
+                        v == null || v.isEmpty
+                            ? 'Selecione uma categoria'
+                            : null,
               ),
               const SizedBox(height: 10),
               TextFormField(
@@ -315,9 +334,12 @@ class _CadastroProdutoScreenState extends State<CadastroProdutoScreen> {
                     if (_formKey.currentState!.validate()) {
                       final produto = Produto(
                         nome: _nomeController.text,
-                        precoCompra: double.tryParse(_precoCompraController.text) ?? 0,
-                        precoVenda: double.tryParse(_precoVendaController.text) ?? 0,
-                        quantidade: int.tryParse(_quantidadeController.text) ?? 0,
+                        precoCompra:
+                            double.tryParse(_precoCompraController.text) ?? 0,
+                        precoVenda:
+                            double.tryParse(_precoVendaController.text) ?? 0,
+                        quantidade:
+                            int.tryParse(_quantidadeController.text) ?? 0,
                         categoria: _categoriaSelecionada ?? '',
                         descricao: _descricaoController.text,
                         imagemUrl: _imagemUrlController.text,
