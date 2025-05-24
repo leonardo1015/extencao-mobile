@@ -1,0 +1,52 @@
+require(["dart_sdk", "flutter_sdk", "zapp_user_main"], (
+  dart_sdk,
+  flutter_sdk,
+  user
+) => {
+  dart_sdk.dart.setStartAsyncSynchronously(true);
+  dart_sdk._isolate_helper.startRootIsolate(() => {}, []);
+  dart_sdk.dart.nonNullAsserts(false);
+  dart_sdk.dart.nativeNonNullAsserts(false);
+  dart_sdk._debugger.registerDevtoolsFormatter();
+  window.$dartLoader = {};
+  window.$dartLoader.rootDirectories = [
+    "/zapp/project",
+    "/zapp/pub",
+    "/zapp/sdk",
+  ];
+  if (window.$requireLoader) {
+    window.$requireLoader.getModuleLibraries = dart_sdk.dart.getModuleLibraries;
+  }
+  function waitForSourceMapsThenRun() {
+    setTimeout(() => {
+      if (window.$dartStackTraceUtility) {
+        window.$dartStackTraceUtility.ready = true;
+        var dart = dart_sdk.dart;
+        window.$dartStackTraceUtility.setSourceMapProvider(function (url) {
+          if (url.endsWith("dart_sdk.js")) {
+            const map = dart.getSourceMap("dart_sdk");
+            return map;
+          }
+          if (url.endsWith("flutter_sdk.js") || url.includes("dart-sdk")) {
+            const map = dart.getSourceMap("flutter_sdk");
+            return map;
+          }
+          return dart.getSourceMap("zapp_user_main");
+        });
+        user[Object.keys(user)[0]].main();
+        if (!window.__zappDidError) {
+          parent.postMessage({ zapp: true, type: "ready" }, "*");
+          // `window.__notifyFlutterRendered` is called instead via `SchedulerBinding.instance.addPostFrameCallback`
+          // if running was succesful.
+        } else {
+          if (window.__notifyFlutterRendered) {
+            setTimeout(() => window.__notifyFlutterRendered(false), 25);
+          }
+        }
+      } else {
+        waitForSourceMapsThenRun();
+      }
+    }, 10);
+  }
+  waitForSourceMapsThenRun();
+});

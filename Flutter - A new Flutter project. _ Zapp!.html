@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<!-- saved from url=(0072)https://zapp.run/edit/flutter-zg6w066rg6x0?entry=test%2Fwidget_test.dart -->
+<html class="dark"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://zapp.run/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://zapp.run/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://zapp.run/favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://zapp.run/favicons/site.webmanifest">
+    <link rel="mask-icon" href="https://zapp.run/favicons/safari-pinned-tab.svg" color="#333333">
+    <link rel="shortcut icon" href="https://zapp.run/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#333333">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#333333">
+    <script defer="" data-domain="zapp.run" src="./Flutter - A new Flutter project. _ Zapp!_files/plausible.js.download"></script>
+    <title>Flutter - A new Flutter project. | Zapp!</title>
+    <meta name="description" content="A new Flutter project.">
+    <meta property="og:title" content="Flutter - A new Flutter project. | Zapp!">
+    <meta property="og:description" content="A new Flutter project.">
+    <meta property="og:url" content="https://zapp.run">
+    <meta property="og:image" content="https://cdn.smmstudio.app/hCknlZzz46KhZ29xUGPz/social-preview/zg6w066rg6x0.png">
+    <meta name="twitter:title" content="Flutter - A new Flutter project. | Zapp!">
+    <meta name="twitter:description" content="A new Flutter project.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://cdn.smmstudio.app/hCknlZzz46KhZ29xUGPz/social-preview/zg6w066rg6x0.png">
+    <meta name="twitter:creator" content="@zapp_run">
+  <link rel="stylesheet" href="./Flutter - A new Flutter project. _ Zapp!_files/404.b50fb115.css">
+<link rel="stylesheet" href="./Flutter - A new Flutter project. _ Zapp!_files/privacy-policy.f9312989.css">
+<link rel="stylesheet" href="./Flutter - A new Flutter project. _ Zapp!_files/index.dee01e7a.css"><script type="module" src="./Flutter - A new Flutter project. _ Zapp!_files/hoisted.f918c42a.js.download"></script><link rel="modulepreload" as="script" crossorigin="" href="https://zapp.run/_astro/Monaco.7c96ea80.js"><link rel="modulepreload" as="script" crossorigin="" href="https://zapp.run/_astro/web.f0f8bff3.js"><link rel="modulepreload" as="script" crossorigin="" href="https://zapp.run/_astro/_commonjsHelpers.87174ba5.js"><link rel="modulepreload" as="script" crossorigin="" href="https://zapp.run/_astro/plausible.bb69bfd5.js"><link rel="modulepreload" as="script" crossorigin="" href="https://zapp.run/_astro/preload-helper.101896b7.js"><link rel="modulepreload" as="script" crossorigin="" href="https://zapp.run/_astro/firebase.a5b1211a.js"><link rel="modulepreload" as="script" crossorigin="" href="https://zapp.run/_astro/trpc.cd529d2b.js"><link rel="modulepreload" as="script" crossorigin="" href="https://zapp.run/_astro/icons.f0072b1a.js"><link rel="modulepreload" as="script" crossorigin="" href="https://zapp.run/_astro/store.64f21c50.js"><link rel="modulepreload" as="script" crossorigin="" href="https://zapp.run/_astro/Statistic.9de7074a.js"><link rel="modulepreload" as="script" crossorigin="" href="https://zapp.run/_astro/yaml.32179e46.js"><style type="text/css" media="screen" class="monaco-colors">.codicon-add:before { content: '\ea60'; }
+.codicon-plus:before { content: '\ea60'; }
+.codicon-gist-new:before { content: '\ea60'; }
+.codicon-repo-create:before { content: '\ea60'; }
+.codicon-lightbulb:before { content: '\ea61'; }
+.codicon-light-bulb:before { content: '\ea61'; }
+.codicon-repo:before { content: '\ea62'; }
+.codicon-repo-delete:before { content: '\ea62'; }
+.codicon-gist-fork:before { content: '\ea63'; }
+.codicon-repo-forked:before { content: '\ea63'; }
+.codicon-git-pull-request:before { content: '\ea64'; }
+.codicon-git-pull-request-abandoned:before { content: '\ea64'; }
+.codicon-record-keys:before { content: '\ea65'; }
+.codicon-keyboard:before { content: '\ea65'; }
+.codicon-tag:before { content: '\ea66'; }
+.codicon-tag-add:before { content: '\ea66'; }
+.codicon-tag-remove:before { content: '\ea66'; }
+.codicon-person:before { content: '\ea67'; }
+.codicon-person-follow:before { content: '\ea67'; }
+.codicon-person-outline:before { content: '\ea67'; }
+.codicon-person-filled:before { content: '\ea67'; }
+.codicon-git-branch:before { content: '\ea68'; }
+.codicon-git-branch-create:before { content: '\ea68'; }
+.codicon-git-branch-delete:before { content: '\ea68'; }
+.codicon-source-control:before { content: '\ea68'; }
+.codicon-mirror:before { content: '\ea69'; }
+.codicon-mirror-public:before { content: '\ea69'; }
+.codicon-star:before { content: '\ea6a'; }
+.codicon-star-add:before { content: '\ea6a'; }
+.codicon-star-delete:before { content: '\ea6a'; }
+.codicon-star-empty:before { content: '\ea6a'; }
+.codicon-comment:before { content: '\ea6b'; }
+.codicon-comment-add:before { content: '\ea6b'; }
+.codicon-alert:before { content: '\ea6c'; }
+.codicon-warning:before { content: '\ea6c'; }
+.codicon-search:before { content: '\ea6d'; }
+.codicon-search-save:before { content: '\ea6d'; }
+.codicon-log-out:before { content: '\ea6e'; }
+.codicon-sign-out:before { content: '\ea6e'; }
+.codicon-log-in:before { content: '\ea6f'; }
+.codicon-sign-in:before { content: '\ea6f'; }
+.codicon-eye:before { content: '\ea70'; }
+.codicon-eye-unwatch:before { content: '\ea70'; }
+.codicon-eye-watch:before { content: '\ea70'; }
+.codicon-circle-filled:before { content: '\ea71'; }
+.codicon-primitive-dot:before { content: '\ea71'; }
+.codicon-close-dirty:before { content: '\ea71'; }
+.codicon-debug-breakpoint:before { content: '\ea71'; }
+.codicon-debug-breakpoint-disabled:before { content: '\ea71'; }
+.codicon-debug-hint:before { content: '\ea71'; }
+.codicon-primitive-square:before { content: '\ea72'; }
+.codicon-edit:before { content: '\ea73'; }
+.codicon-pencil:before { content: '\ea73'; }
+.codicon-info:before { content: '\ea74'; }
+.codicon-issue-opened:before { content: '\ea74'; }
+.codicon-gist-private:before { content: '\ea75'; }
+.codicon-git-fork-private:before { content: '\ea75'; }
+.codicon-lock:before { content: '\ea75'; }
+.codicon-mirror-private:before { content: '\ea75'; }
+.codicon-close:before { content: '\ea76'; }
+.codicon-remove-close:before { content: '\ea76'; }
+.codicon-x:before { content: '\ea76'; }
+.codicon-repo-sync:before { content: '\ea77'; }
+.codicon-sync:before { content: '\ea77'; }
+.codicon-clone:before { content: '\ea78'; }
+.codicon-desktop-download:before { content: '\ea78'; }
+.codicon-beaker:before { content: '\ea79'; }
+.codicon-microscope:before { content: '\ea79'; }
+.codicon-vm:before { content: '\ea7a'; }
+.codicon-device-desktop:before { content: '\ea7a'; }
+.codicon-file:before { content: '\ea7b'; }
+.codicon-file-text:before { content: '\ea7b'; }
+.codicon-more:before { content: '\ea7c'; }
+.codicon-ellipsis:before { content: '\ea7c'; }
+.codicon-kebab-horizontal:before { content: '\ea7c'; }
+.codicon-mail-reply:before { content: '\ea7d'; }
+.codicon-reply:before { content: '\ea7d'; }
+.codicon-organization:before { content: '\ea7e'; }
+.codicon-organization-filled:before { content: '\ea7e'; }
+.codicon-organization-outline:before { content: '\ea7e'; }
+.codicon-new-file:before { content: '\ea7f'; }
+.codicon-file-add:before { content: '\ea7f'; }
+.codicon-new-folder:before { content: '\ea80'; }
+.codicon-file-directory-create:before { content: '\ea80'; }
+.codicon-trash:before { content: '\ea81'; }
+.codicon-trashcan:before { content: '\ea81'; }
+.codicon-history:before { content: '\ea82'; }
+.codicon-clock:before { content: '\ea82'; }
+.codicon-folder:before { content: '\ea83'; }
+.codicon-file-directory:before { content: '\ea83'; }
+.codicon-symbol-folder:before { content: '\ea83'; }
+.codicon-logo-github:before { content: '\ea84'; }
+.codicon-mark-github:before { content: '\ea84'; }
+.codicon-github:before { content: '\ea84'; }
+.codicon-terminal:before { content: '\ea85'; }
+.codicon-console:before { content: '\ea85'; }
+.codicon-repl:before { content: '\ea85'; }
+.codicon-zap:before { content: '\ea86'; }
+.codicon-symbol-event:before { content: '\ea86'; }
+.codicon-error:before { content: '\ea87'; }
+.codicon-stop:before { content: '\ea87'; }
+.codicon-variable:before { content: '\ea88'; }
+.codicon-symbol-variable:before { content: '\ea88'; }
+.codicon-array:before { content: '\ea8a'; }
+.codicon-symbol-array:before { content: '\ea8a'; }
+.codicon-symbol-module:before { content: '\ea8b'; }
+.codicon-symbol-package:before { content: '\ea8b'; }
+.codicon-symbol-namespace:before { content: '\ea8b'; }
+.codicon-symbol-object:before { content: '\ea8b'; }
+.codicon-symbol-method:before { content: '\ea8c'; }
+.codicon-symbol-function:before { content: '\ea8c'; }
+.codicon-symbol-constructor:before { content: '\ea8c'; }
+.codicon-symbol-boolean:before { content: '\ea8f'; }
+.codicon-symbol-null:before { content: '\ea8f'; }
+.codicon-symbol-numeric:before { content: '\ea90'; }
+.codicon-symbol-number:before { content: '\ea90'; }
+.codicon-symbol-structure:before { content: '\ea91'; }
+.codicon-symbol-struct:before { content: '\ea91'; }
+.codicon-symbol-parameter:before { content: '\ea92'; }
+.codicon-symbol-type-parameter:before { content: '\ea92'; }
+.codicon-symbol-key:before { content: '\ea93'; }
+.codicon-symbol-text:before { content: '\ea93'; }
+.codicon-symbol-reference:before { content: '\ea94'; }
+.codicon-go-to-file:before { content: '\ea94'; }
+.codicon-symbol-enum:before { content: '\ea95'; }
+.codicon-symbol-value:before { content: '\ea95'; }
+.codicon-symbol-ruler:before { content: '\ea96'; }
+.codicon-symbol-unit:before { content: '\ea96'; }
+.codicon-activate-breakpoints:before { content: '\ea97'; }
+.codicon-archive:before { content: '\ea98'; }
+.codicon-arrow-both:before { content: '\ea99'; }
+.codicon-arrow-down:before { content: '\ea9a'; }
+.codicon-arrow-left:before { content: '\ea9b'; }
+.codicon-arrow-right:before { content: '\ea9c'; }
+.codicon-arrow-small-down:before { content: '\ea9d'; }
+.codicon-arrow-small-left:before { content: '\ea9e'; }
+.codicon-arrow-small-right:before { content: '\ea9f'; }
+.codicon-arrow-small-up:before { content: '\eaa0'; }
+.codicon-arrow-up:before { content: '\eaa1'; }
+.codicon-bell:before { content: '\eaa2'; }
+.codicon-bold:before { content: '\eaa3'; }
+.codicon-book:before { content: '\eaa4'; }
+.codicon-bookmark:before { content: '\eaa5'; }
+.codicon-debug-breakpoint-conditional-unverified:before { content: '\eaa6'; }
+.codicon-debug-breakpoint-conditional:before { content: '\eaa7'; }
+.codicon-debug-breakpoint-conditional-disabled:before { content: '\eaa7'; }
+.codicon-debug-breakpoint-data-unverified:before { content: '\eaa8'; }
+.codicon-debug-breakpoint-data:before { content: '\eaa9'; }
+.codicon-debug-breakpoint-data-disabled:before { content: '\eaa9'; }
+.codicon-debug-breakpoint-log-unverified:before { content: '\eaaa'; }
+.codicon-debug-breakpoint-log:before { content: '\eaab'; }
+.codicon-debug-breakpoint-log-disabled:before { content: '\eaab'; }
+.codicon-briefcase:before { content: '\eaac'; }
+.codicon-broadcast:before { content: '\eaad'; }
+.codicon-browser:before { content: '\eaae'; }
+.codicon-bug:before { content: '\eaaf'; }
+.codicon-calendar:before { content: '\eab0'; }
+.codicon-case-sensitive:before { content: '\eab1'; }
+.codicon-check:before { content: '\eab2'; }
+.codicon-checklist:before { content: '\eab3'; }
+.codicon-chevron-down:before { content: '\eab4'; }
+.codicon-drop-down-button:before { content: '\eab4'; }
+.codicon-chevron-left:before { content: '\eab5'; }
+.codicon-chevron-right:before { content: '\eab6'; }
+.codicon-chevron-up:before { content: '\eab7'; }
+.codicon-chrome-close:before { content: '\eab8'; }
+.codicon-chrome-maximize:before { content: '\eab9'; }
+.codicon-chrome-minimize:before { content: '\eaba'; }
+.codicon-chrome-restore:before { content: '\eabb'; }
+.codicon-circle-outline:before { content: '\eabc'; }
+.codicon-debug-breakpoint-unverified:before { content: '\eabc'; }
+.codicon-circle-slash:before { content: '\eabd'; }
+.codicon-circuit-board:before { content: '\eabe'; }
+.codicon-clear-all:before { content: '\eabf'; }
+.codicon-clippy:before { content: '\eac0'; }
+.codicon-close-all:before { content: '\eac1'; }
+.codicon-cloud-download:before { content: '\eac2'; }
+.codicon-cloud-upload:before { content: '\eac3'; }
+.codicon-code:before { content: '\eac4'; }
+.codicon-collapse-all:before { content: '\eac5'; }
+.codicon-color-mode:before { content: '\eac6'; }
+.codicon-comment-discussion:before { content: '\eac7'; }
+.codicon-compare-changes:before { content: '\eafd'; }
+.codicon-credit-card:before { content: '\eac9'; }
+.codicon-dash:before { content: '\eacc'; }
+.codicon-dashboard:before { content: '\eacd'; }
+.codicon-database:before { content: '\eace'; }
+.codicon-debug-continue:before { content: '\eacf'; }
+.codicon-debug-disconnect:before { content: '\ead0'; }
+.codicon-debug-pause:before { content: '\ead1'; }
+.codicon-debug-restart:before { content: '\ead2'; }
+.codicon-debug-start:before { content: '\ead3'; }
+.codicon-debug-step-into:before { content: '\ead4'; }
+.codicon-debug-step-out:before { content: '\ead5'; }
+.codicon-debug-step-over:before { content: '\ead6'; }
+.codicon-debug-stop:before { content: '\ead7'; }
+.codicon-debug:before { content: '\ead8'; }
+.codicon-device-camera-video:before { content: '\ead9'; }
+.codicon-device-camera:before { content: '\eada'; }
+.codicon-device-mobile:before { content: '\eadb'; }
+.codicon-diff-added:before { content: '\eadc'; }
+.codicon-diff-ignored:before { content: '\eadd'; }
+.codicon-diff-modified:before { content: '\eade'; }
+.codicon-diff-removed:before { content: '\eadf'; }
+.codicon-diff-renamed:before { content: '\eae0'; }
+.codicon-diff:before { content: '\eae1'; }
+.codicon-discard:before { content: '\eae2'; }
+.codicon-editor-layout:before { content: '\eae3'; }
+.codicon-empty-window:before { content: '\eae4'; }
+.codicon-exclude:before { content: '\eae5'; }
+.codicon-extensions:before { content: '\eae6'; }
+.codicon-eye-closed:before { content: '\eae7'; }
+.codicon-file-binary:before { content: '\eae8'; }
+.codicon-file-code:before { content: '\eae9'; }
+.codicon-file-media:before { content: '\eaea'; }
+.codicon-file-pdf:before { content: '\eaeb'; }
+.codicon-file-submodule:before { content: '\eaec'; }
+.codicon-file-symlink-directory:before { content: '\eaed'; }
+.codicon-file-symlink-file:before { content: '\eaee'; }
+.codicon-file-zip:before { content: '\eaef'; }
+.codicon-files:before { content: '\eaf0'; }
+.codicon-filter:before { content: '\eaf1'; }
+.codicon-flame:before { content: '\eaf2'; }
+.codicon-fold-down:before { content: '\eaf3'; }
+.codicon-fold-up:before { content: '\eaf4'; }
+.codicon-fold:before { content: '\eaf5'; }
+.codicon-folder-active:before { content: '\eaf6'; }
+.codicon-folder-opened:before { content: '\eaf7'; }
+.codicon-gear:before { content: '\eaf8'; }
+.codicon-gift:before { content: '\eaf9'; }
+.codicon-gist-secret:before { content: '\eafa'; }
+.codicon-gist:before { content: '\eafb'; }
+.codicon-git-commit:before { content: '\eafc'; }
+.codicon-git-compare:before { content: '\eafd'; }
+.codicon-git-merge:before { content: '\eafe'; }
+.codicon-github-action:before { content: '\eaff'; }
+.codicon-github-alt:before { content: '\eb00'; }
+.codicon-globe:before { content: '\eb01'; }
+.codicon-grabber:before { content: '\eb02'; }
+.codicon-graph:before { content: '\eb03'; }
+.codicon-gripper:before { content: '\eb04'; }
+.codicon-heart:before { content: '\eb05'; }
+.codicon-home:before { content: '\eb06'; }
+.codicon-horizontal-rule:before { content: '\eb07'; }
+.codicon-hubot:before { content: '\eb08'; }
+.codicon-inbox:before { content: '\eb09'; }
+.codicon-issue-closed:before { content: '\eba4'; }
+.codicon-issue-reopened:before { content: '\eb0b'; }
+.codicon-issues:before { content: '\eb0c'; }
+.codicon-italic:before { content: '\eb0d'; }
+.codicon-jersey:before { content: '\eb0e'; }
+.codicon-json:before { content: '\eb0f'; }
+.codicon-kebab-vertical:before { content: '\eb10'; }
+.codicon-key:before { content: '\eb11'; }
+.codicon-law:before { content: '\eb12'; }
+.codicon-lightbulb-autofix:before { content: '\eb13'; }
+.codicon-link-external:before { content: '\eb14'; }
+.codicon-link:before { content: '\eb15'; }
+.codicon-list-ordered:before { content: '\eb16'; }
+.codicon-list-unordered:before { content: '\eb17'; }
+.codicon-live-share:before { content: '\eb18'; }
+.codicon-loading:before { content: '\eb19'; }
+.codicon-location:before { content: '\eb1a'; }
+.codicon-mail-read:before { content: '\eb1b'; }
+.codicon-mail:before { content: '\eb1c'; }
+.codicon-markdown:before { content: '\eb1d'; }
+.codicon-megaphone:before { content: '\eb1e'; }
+.codicon-mention:before { content: '\eb1f'; }
+.codicon-milestone:before { content: '\eb20'; }
+.codicon-mortar-board:before { content: '\eb21'; }
+.codicon-move:before { content: '\eb22'; }
+.codicon-multiple-windows:before { content: '\eb23'; }
+.codicon-mute:before { content: '\eb24'; }
+.codicon-no-newline:before { content: '\eb25'; }
+.codicon-note:before { content: '\eb26'; }
+.codicon-octoface:before { content: '\eb27'; }
+.codicon-open-preview:before { content: '\eb28'; }
+.codicon-package:before { content: '\eb29'; }
+.codicon-paintcan:before { content: '\eb2a'; }
+.codicon-pin:before { content: '\eb2b'; }
+.codicon-play:before { content: '\eb2c'; }
+.codicon-run:before { content: '\eb2c'; }
+.codicon-plug:before { content: '\eb2d'; }
+.codicon-preserve-case:before { content: '\eb2e'; }
+.codicon-preview:before { content: '\eb2f'; }
+.codicon-project:before { content: '\eb30'; }
+.codicon-pulse:before { content: '\eb31'; }
+.codicon-question:before { content: '\eb32'; }
+.codicon-quote:before { content: '\eb33'; }
+.codicon-radio-tower:before { content: '\eb34'; }
+.codicon-reactions:before { content: '\eb35'; }
+.codicon-references:before { content: '\eb36'; }
+.codicon-refresh:before { content: '\eb37'; }
+.codicon-regex:before { content: '\eb38'; }
+.codicon-remote-explorer:before { content: '\eb39'; }
+.codicon-remote:before { content: '\eb3a'; }
+.codicon-remove:before { content: '\eb3b'; }
+.codicon-replace-all:before { content: '\eb3c'; }
+.codicon-replace:before { content: '\eb3d'; }
+.codicon-repo-clone:before { content: '\eb3e'; }
+.codicon-repo-force-push:before { content: '\eb3f'; }
+.codicon-repo-pull:before { content: '\eb40'; }
+.codicon-repo-push:before { content: '\eb41'; }
+.codicon-report:before { content: '\eb42'; }
+.codicon-request-changes:before { content: '\eb43'; }
+.codicon-rocket:before { content: '\eb44'; }
+.codicon-root-folder-opened:before { content: '\eb45'; }
+.codicon-root-folder:before { content: '\eb46'; }
+.codicon-rss:before { content: '\eb47'; }
+.codicon-ruby:before { content: '\eb48'; }
+.codicon-save-all:before { content: '\eb49'; }
+.codicon-save-as:before { content: '\eb4a'; }
+.codicon-save:before { content: '\eb4b'; }
+.codicon-screen-full:before { content: '\eb4c'; }
+.codicon-screen-normal:before { content: '\eb4d'; }
+.codicon-search-stop:before { content: '\eb4e'; }
+.codicon-server:before { content: '\eb50'; }
+.codicon-settings-gear:before { content: '\eb51'; }
+.codicon-settings:before { content: '\eb52'; }
+.codicon-shield:before { content: '\eb53'; }
+.codicon-smiley:before { content: '\eb54'; }
+.codicon-sort-precedence:before { content: '\eb55'; }
+.codicon-split-horizontal:before { content: '\eb56'; }
+.codicon-split-vertical:before { content: '\eb57'; }
+.codicon-squirrel:before { content: '\eb58'; }
+.codicon-star-full:before { content: '\eb59'; }
+.codicon-star-half:before { content: '\eb5a'; }
+.codicon-symbol-class:before { content: '\eb5b'; }
+.codicon-symbol-color:before { content: '\eb5c'; }
+.codicon-symbol-customcolor:before { content: '\eb5c'; }
+.codicon-symbol-constant:before { content: '\eb5d'; }
+.codicon-symbol-enum-member:before { content: '\eb5e'; }
+.codicon-symbol-field:before { content: '\eb5f'; }
+.codicon-symbol-file:before { content: '\eb60'; }
+.codicon-symbol-interface:before { content: '\eb61'; }
+.codicon-symbol-keyword:before { content: '\eb62'; }
+.codicon-symbol-misc:before { content: '\eb63'; }
+.codicon-symbol-operator:before { content: '\eb64'; }
+.codicon-symbol-property:before { content: '\eb65'; }
+.codicon-wrench:before { content: '\eb65'; }
+.codicon-wrench-subaction:before { content: '\eb65'; }
+.codicon-symbol-snippet:before { content: '\eb66'; }
+.codicon-tasklist:before { content: '\eb67'; }
+.codicon-telescope:before { content: '\eb68'; }
+.codicon-text-size:before { content: '\eb69'; }
+.codicon-three-bars:before { content: '\eb6a'; }
+.codicon-thumbsdown:before { content: '\eb6b'; }
+.codicon-thumbsup:before { content: '\eb6c'; }
+.codicon-tools:before { content: '\eb6d'; }
+.codicon-triangle-down:before { content: '\eb6e'; }
+.codicon-triangle-left:before { content: '\eb6f'; }
+.codicon-triangle-right:before { content: '\eb70'; }
+.codicon-triangle-up:before { content: '\eb71'; }
+.codicon-twitter:before { content: '\eb72'; }
+.codicon-unfold:before { content: '\eb73'; }
+.codicon-unlock:before { content: '\eb74'; }
+.codicon-unmute:before { content: '\eb75'; }
+.codicon-unverified:before { content: '\eb76'; }
+.codicon-verified:before { content: '\eb77'; }
+.codicon-versions:before { content: '\eb78'; }
+.codicon-vm-active:before { content: '\eb79'; }
+.codicon-vm-outline:before { content: '\eb7a'; }
+.codicon-vm-running:before { content: '\eb7b'; }
+.codicon-watch:before { content: '\eb7c'; }
+.codicon-whitespace:before { content: '\eb7d'; }
+.codicon-whole-word:before { content: '\eb7e'; }
+.codicon-window:before { content: '\eb7f'; }
+.codicon-word-wrap:before { content: '\eb80'; }
+.codicon-zoom-in:before { content: '\eb81'; }
+.codicon-zoom-out:before { content: '\eb82'; }
+.codicon-list-filter:before { content: '\eb83'; }
+.codicon-list-flat:before { content: '\eb84'; }
+.codicon-list-selection:before { content: '\eb85'; }
+.codicon-selection:before { content: '\eb85'; }
+.codicon-list-tree:before { content: '\eb86'; }
+.codicon-debug-breakpoint-function-unverified:before { content: '\eb87'; }
+.codicon-debug-breakpoint-function:before { content: '\eb88'; }
+.codicon-debug-breakpoint-function-disabled:before { content: '\eb88'; }
+.codicon-debug-stackframe-active:before { content: '\eb89'; }
+.codicon-circle-small-filled:before { content: '\eb8a'; }
+.codicon-debug-stackframe-dot:before { content: '\eb8a'; }
+.codicon-debug-stackframe:before { content: '\eb8b'; }
+.codicon-debug-stackframe-focused:before { content: '\eb8b'; }
+.codicon-debug-breakpoint-unsupported:before { content: '\eb8c'; }
+.codicon-symbol-string:before { content: '\eb8d'; }
+.codicon-debug-reverse-continue:before { content: '\eb8e'; }
+.codicon-debug-step-back:before { content: '\eb8f'; }
+.codicon-debug-restart-frame:before { content: '\eb90'; }
+.codicon-call-incoming:before { content: '\eb92'; }
+.codicon-call-outgoing:before { content: '\eb93'; }
+.codicon-menu:before { content: '\eb94'; }
+.codicon-expand-all:before { content: '\eb95'; }
+.codicon-feedback:before { content: '\eb96'; }
+.codicon-group-by-ref-type:before { content: '\eb97'; }
+.codicon-ungroup-by-ref-type:before { content: '\eb98'; }
+.codicon-account:before { content: '\eb99'; }
+.codicon-bell-dot:before { content: '\eb9a'; }
+.codicon-debug-console:before { content: '\eb9b'; }
+.codicon-library:before { content: '\eb9c'; }
+.codicon-output:before { content: '\eb9d'; }
+.codicon-run-all:before { content: '\eb9e'; }
+.codicon-sync-ignored:before { content: '\eb9f'; }
+.codicon-pinned:before { content: '\eba0'; }
+.codicon-github-inverted:before { content: '\eba1'; }
+.codicon-debug-alt:before { content: '\eb91'; }
+.codicon-server-process:before { content: '\eba2'; }
+.codicon-server-environment:before { content: '\eba3'; }
+.codicon-pass:before { content: '\eba4'; }
+.codicon-stop-circle:before { content: '\eba5'; }
+.codicon-play-circle:before { content: '\eba6'; }
+.codicon-record:before { content: '\eba7'; }
+.codicon-debug-alt-small:before { content: '\eba8'; }
+.codicon-vm-connect:before { content: '\eba9'; }
+.codicon-cloud:before { content: '\ebaa'; }
+.codicon-merge:before { content: '\ebab'; }
+.codicon-export:before { content: '\ebac'; }
+.codicon-graph-left:before { content: '\ebad'; }
+.codicon-magnet:before { content: '\ebae'; }
+.codicon-notebook:before { content: '\ebaf'; }
+.codicon-redo:before { content: '\ebb0'; }
+.codicon-check-all:before { content: '\ebb1'; }
+.codicon-pinned-dirty:before { content: '\ebb2'; }
+.codicon-pass-filled:before { content: '\ebb3'; }
+.codicon-circle-large-filled:before { content: '\ebb4'; }
+.codicon-circle-large-outline:before { content: '\ebb5'; }
+.codicon-combine:before { content: '\ebb6'; }
+.codicon-gather:before { content: '\ebb6'; }
+.codicon-table:before { content: '\ebb7'; }
+.codicon-variable-group:before { content: '\ebb8'; }
+.codicon-type-hierarchy:before { content: '\ebb9'; }
+.codicon-type-hierarchy-sub:before { content: '\ebba'; }
+.codicon-type-hierarchy-super:before { content: '\ebbb'; }
+.codicon-git-pull-request-create:before { content: '\ebbc'; }
+.codicon-run-above:before { content: '\ebbd'; }
+.codicon-run-below:before { content: '\ebbe'; }
+.codicon-notebook-template:before { content: '\ebbf'; }
+.codicon-debug-rerun:before { content: '\ebc0'; }
+.codicon-workspace-trusted:before { content: '\ebc1'; }
+.codicon-workspace-untrusted:before { content: '\ebc2'; }
+.codicon-workspace-unspecified:before { content: '\ebc3'; }
+.codicon-terminal-cmd:before { content: '\ebc4'; }
+.codicon-terminal-debian:before { content: '\ebc5'; }
+.codicon-terminal-linux:before { content: '\ebc6'; }
+.codicon-terminal-powershell:before { content: '\ebc7'; }
+.codicon-terminal-tmux:before { content: '\ebc8'; }
+.codicon-terminal-ubuntu:before { content: '\ebc9'; }
+.codicon-terminal-bash:before { content: '\ebca'; }
+.codicon-arrow-swap:before { content: '\ebcb'; }
+.codicon-copy:before { content: '\ebcc'; }
+.codicon-person-add:before { content: '\ebcd'; }
+.codicon-filter-filled:before { content: '\ebce'; }
+.codicon-wand:before { content: '\ebcf'; }
+.codicon-debug-line-by-line:before { content: '\ebd0'; }
+.codicon-inspect:before { content: '\ebd1'; }
+.codicon-layers:before { content: '\ebd2'; }
+.codicon-layers-dot:before { content: '\ebd3'; }
+.codicon-layers-active:before { content: '\ebd4'; }
+.codicon-compass:before { content: '\ebd5'; }
+.codicon-compass-dot:before { content: '\ebd6'; }
+.codicon-compass-active:before { content: '\ebd7'; }
+.codicon-azure:before { content: '\ebd8'; }
+.codicon-issue-draft:before { content: '\ebd9'; }
+.codicon-git-pull-request-closed:before { content: '\ebda'; }
+.codicon-git-pull-request-draft:before { content: '\ebdb'; }
+.codicon-debug-all:before { content: '\ebdc'; }
+.codicon-debug-coverage:before { content: '\ebdd'; }
+.codicon-run-errors:before { content: '\ebde'; }
+.codicon-folder-library:before { content: '\ebdf'; }
+.codicon-debug-continue-small:before { content: '\ebe0'; }
+.codicon-beaker-stop:before { content: '\ebe1'; }
+.codicon-graph-line:before { content: '\ebe2'; }
+.codicon-graph-scatter:before { content: '\ebe3'; }
+.codicon-pie-chart:before { content: '\ebe4'; }
+.codicon-bracket:before { content: '\eb0f'; }
+.codicon-bracket-dot:before { content: '\ebe5'; }
+.codicon-bracket-error:before { content: '\ebe6'; }
+.codicon-lock-small:before { content: '\ebe7'; }
+.codicon-azure-devops:before { content: '\ebe8'; }
+.codicon-verified-filled:before { content: '\ebe9'; }
+.codicon-newline:before { content: '\ebea'; }
+.codicon-layout:before { content: '\ebeb'; }
+.codicon-layout-activitybar-left:before { content: '\ebec'; }
+.codicon-layout-activitybar-right:before { content: '\ebed'; }
+.codicon-layout-panel-left:before { content: '\ebee'; }
+.codicon-layout-panel-center:before { content: '\ebef'; }
+.codicon-layout-panel-justify:before { content: '\ebf0'; }
+.codicon-layout-panel-right:before { content: '\ebf1'; }
+.codicon-layout-panel:before { content: '\ebf2'; }
+.codicon-layout-sidebar-left:before { content: '\ebf3'; }
+.codicon-layout-sidebar-right:before { content: '\ebf4'; }
+.codicon-layout-statusbar:before { content: '\ebf5'; }
+.codicon-layout-menubar:before { content: '\ebf6'; }
+.codicon-layout-centered:before { content: '\ebf7'; }
+.codicon-layout-sidebar-right-off:before { content: '\ec00'; }
+.codicon-layout-panel-off:before { content: '\ec01'; }
+.codicon-layout-sidebar-left-off:before { content: '\ec02'; }
+.codicon-target:before { content: '\ebf8'; }
+.codicon-indent:before { content: '\ebf9'; }
+.codicon-record-small:before { content: '\ebfa'; }
+.codicon-error-small:before { content: '\ebfb'; }
+.codicon-arrow-circle-down:before { content: '\ebfc'; }
+.codicon-arrow-circle-left:before { content: '\ebfd'; }
+.codicon-arrow-circle-right:before { content: '\ebfe'; }
+.codicon-arrow-circle-up:before { content: '\ebff'; }
+.codicon-heart-filled:before { content: '\ec04'; }
+.codicon-map:before { content: '\ec05'; }
+.codicon-map-filled:before { content: '\ec06'; }
+.codicon-circle-small:before { content: '\ec07'; }
+.codicon-bell-slash:before { content: '\ec08'; }
+.codicon-bell-slash-dot:before { content: '\ec09'; }
+.codicon-comment-unresolved:before { content: '\ec0a'; }
+.codicon-git-pull-request-go-to-changes:before { content: '\ec0b'; }
+.codicon-git-pull-request-new-changes:before { content: '\ec0c'; }
+.codicon-dialog-error:before { content: '\ea87'; }
+.codicon-dialog-warning:before { content: '\ea6c'; }
+.codicon-dialog-info:before { content: '\ea74'; }
+.codicon-dialog-close:before { content: '\ea76'; }
+.codicon-tree-item-expanded:before { content: '\eab4'; }
+.codicon-tree-filter-on-type-on:before { content: '\eb83'; }
+.codicon-tree-filter-on-type-off:before { content: '\eb85'; }
+.codicon-tree-filter-clear:before { content: '\ea76'; }
+.codicon-tree-item-loading:before { content: '\eb19'; }
+.codicon-menu-selection:before { content: '\eab2'; }
+.codicon-menu-submenu:before { content: '\eab6'; }
+.codicon-menubar-more:before { content: '\ea7c'; }
+.codicon-scrollbar-button-left:before { content: '\eb6f'; }
+.codicon-scrollbar-button-right:before { content: '\eb70'; }
+.codicon-scrollbar-button-up:before { content: '\eb71'; }
+.codicon-scrollbar-button-down:before { content: '\eb6e'; }
+.codicon-toolbar-more:before { content: '\ea7c'; }
+.codicon-quick-input-back:before { content: '\ea9b'; }
+.codicon-widget-close:before { content: '\ea76'; }
+.codicon-goto-previous-location:before { content: '\eaa1'; }
+.codicon-goto-next-location:before { content: '\ea9a'; }
+.codicon-diff-review-insert:before { content: '\ea60'; }
+.codicon-diff-review-remove:before { content: '\eb3b'; }
+.codicon-diff-review-close:before { content: '\ea76'; }
+.codicon-diff-insert:before { content: '\ea60'; }
+.codicon-diff-remove:before { content: '\eb3b'; }
+.codicon-marker-navigation-next:before { content: '\ea9a'; }
+.codicon-marker-navigation-previous:before { content: '\eaa1'; }
+.codicon-find-selection:before { content: '\eb85'; }
+.codicon-find-collapsed:before { content: '\eab6'; }
+.codicon-find-expanded:before { content: '\eab4'; }
+.codicon-find-replace:before { content: '\eb3d'; }
+.codicon-find-replace-all:before { content: '\eb3c'; }
+.codicon-find-previous-match:before { content: '\eaa1'; }
+.codicon-find-next-match:before { content: '\ea9a'; }
+.codicon-folding-expanded:before { content: '\eab4'; }
+.codicon-folding-collapsed:before { content: '\eab6'; }
+.codicon-folding-manual-collapsed:before { content: '\eab6'; }
+.codicon-folding-manual-expanded:before { content: '\eab4'; }
+.codicon-suggest-more-info:before { content: '\eab6'; }
+.codicon-parameter-hints-next:before { content: '\eab4'; }
+.codicon-parameter-hints-previous:before { content: '\eab7'; }
+.codicon-extensions-warning-message:before { content: '\ea6c'; }
+.codicon-settings-sync-view-icon:before { content: '\ea77'; }
+.monaco-editor, .monaco-editor-background { background-color: #202528; }
+.monaco-editor .inputarea.ime-input { background-color: #262b2e; }
+.monaco-editor, .monaco-editor .inputarea.ime-input { color: #ffffff; }
+.monaco-editor .margin { background-color: #202528; }
+.monaco-editor .rangeHighlight { background-color: rgba(255, 255, 255, 0.04); }
+.monaco-editor .symbolHighlight { background-color: rgba(234, 92, 0, 0.33); }
+.monaco-editor .mtkw { color: #545454 !important; }
+.monaco-editor .mtkz { color: #545454 !important; }
+.monaco-editor .line-numbers { color: #858585; }
+.monaco-editor .line-numbers.active-line-number { color: #c6c6c6; }
+.monaco-editor .view-overlays .current-line { background-color: #262b2e; }
+.monaco-editor .margin-view-overlays .current-line-margin { background-color: #262b2e; border: none; }
+
+			.monaco-scrollable-element > .shadow.top {
+				box-shadow: #000000 0 6px 6px -6px inset;
+			}
+
+			.monaco-scrollable-element > .shadow.left {
+				box-shadow: #000000 6px 0 6px -6px inset;
+			}
+
+			.monaco-scrollable-element > .shadow.top.left {
+				box-shadow: #000000 6px 6px 6px -6px inset;
+			}
+		
+
+			.monaco-scrollable-element > .scrollbar > .slider {
+				background: rgba(121, 121, 121, 0.4);
+			}
+		
+
+			.monaco-scrollable-element > .scrollbar > .slider:hover {
+				background: rgba(100, 100, 100, 0.7);
+			}
+		
+
+			.monaco-scrollable-element > .scrollbar > .slider.active {
+				background: rgba(191, 191, 191, 0.4);
+			}
+		
+.monaco-editor .lines-content .core-guide-indent { box-shadow: 1px 0 0 0 #545454 inset; }
+.monaco-editor .lines-content .core-guide-indent-active { box-shadow: 1px 0 0 0 #545454 inset; }
+.monaco-editor .bracket-indent-guide.lvl-0 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-1 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-2 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-3 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-4 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-5 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-6 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-7 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-8 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-9 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-10 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-11 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-12 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-13 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-14 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-15 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-16 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-17 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-18 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-19 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-20 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-21 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-22 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-23 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-24 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-25 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-26 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .bracket-indent-guide.lvl-27 { --guide-color: rgba(255, 215, 0, 0.3); --guide-color-active: #ffd700; }
+.monaco-editor .bracket-indent-guide.lvl-28 { --guide-color: rgba(218, 112, 214, 0.3); --guide-color-active: #da70d6; }
+.monaco-editor .bracket-indent-guide.lvl-29 { --guide-color: rgba(23, 159, 255, 0.3); --guide-color-active: #179fff; }
+.monaco-editor .vertical { box-shadow: 1px 0 0 0 var(--guide-color) inset; }
+.monaco-editor .horizontal-top { border-top: 1px solid var(--guide-color); }
+.monaco-editor .horizontal-bottom { border-bottom: 1px solid var(--guide-color); }
+.monaco-editor .vertical.indent-active { box-shadow: 1px 0 0 0 var(--guide-color-active) inset; }
+.monaco-editor .horizontal-top.indent-active { border-top: 1px solid var(--guide-color-active); }
+.monaco-editor .horizontal-bottom.indent-active { border-bottom: 1px solid var(--guide-color-active); }
+.monaco-editor .minimap-slider .minimap-slider-horizontal { background: rgba(121, 121, 121, 0.2); }
+.monaco-editor .minimap-slider:hover .minimap-slider-horizontal { background: rgba(100, 100, 100, 0.35); }
+.monaco-editor .minimap-slider.active .minimap-slider-horizontal { background: rgba(191, 191, 191, 0.2); }
+.monaco-editor .minimap-shadow-visible { box-shadow: #000000 -6px 0 6px -6px inset; }
+.monaco-editor .view-ruler { box-shadow: 1px 0 0 0 #5a5a5a inset; }
+.monaco-editor .scroll-decoration { box-shadow: #000000 0 6px 6px -6px inset; }
+.monaco-editor .focused .selected-text { background-color: #597bab; }
+.monaco-editor .selected-text { background-color: rgba(89, 123, 171, 0.5); }
+.monaco-editor .inputarea.ime-input { caret-color: #7da5dc; }
+.monaco-editor .cursors-layer .cursor { background-color: #7da5dc; border-color: #7da5dc; color: #825a23; }
+.monaco-editor .unexpected-closing-bracket { color: rgba(255, 18, 18, 0.8); }
+.monaco-editor .bracket-highlighting-0 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-1 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-2 { color: #179fff; }
+.monaco-editor .bracket-highlighting-3 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-4 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-5 { color: #179fff; }
+.monaco-editor .bracket-highlighting-6 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-7 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-8 { color: #179fff; }
+.monaco-editor .bracket-highlighting-9 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-10 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-11 { color: #179fff; }
+.monaco-editor .bracket-highlighting-12 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-13 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-14 { color: #179fff; }
+.monaco-editor .bracket-highlighting-15 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-16 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-17 { color: #179fff; }
+.monaco-editor .bracket-highlighting-18 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-19 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-20 { color: #179fff; }
+.monaco-editor .bracket-highlighting-21 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-22 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-23 { color: #179fff; }
+.monaco-editor .bracket-highlighting-24 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-25 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-26 { color: #179fff; }
+.monaco-editor .bracket-highlighting-27 { color: #ffd700; }
+.monaco-editor .bracket-highlighting-28 { color: #da70d6; }
+.monaco-editor .bracket-highlighting-29 { color: #179fff; }
+.monaco-editor .squiggly-error { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23f14c4c'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-warning { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%23cca700'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-info { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%206%203'%20enable-background%3D'new%200%200%206%203'%20height%3D'3'%20width%3D'6'%3E%3Cg%20fill%3D'%233794ff'%3E%3Cpolygon%20points%3D'5.5%2C0%202.5%2C3%201.1%2C3%204.1%2C0'%2F%3E%3Cpolygon%20points%3D'4%2C0%206%2C2%206%2C0.6%205.4%2C0'%2F%3E%3Cpolygon%20points%3D'0%2C2%201%2C3%202.4%2C3%200%2C0.6'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") repeat-x bottom left; }
+.monaco-editor .squiggly-hint { background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%223%22%20width%3D%2212%22%3E%3Cg%20fill%3D%22rgba(238%2C%20238%2C%20238%2C%200.7)%22%3E%3Ccircle%20cx%3D%221%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%225%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3Ccircle%20cx%3D%229%22%20cy%3D%221%22%20r%3D%221%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat bottom left; }
+.monaco-editor.showUnused .squiggly-inline-unnecessary { opacity: 0.667; }
+.monaco-editor.showDeprecated .squiggly-inline-deprecated { text-decoration: line-through; text-decoration-color: #ffffff}
+.monaco-diff-editor .diff-review-line-number { color: #858585; }
+.monaco-diff-editor .diff-review-shadow { box-shadow: #000000 0 -6px 6px -6px inset; }
+.monaco-editor .char-insert, .monaco-diff-editor .char-insert { background-color: rgba(156, 204, 44, 0.2); }
+.monaco-editor .line-insert, .monaco-diff-editor .line-insert { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-editor .inline-added-margin-view-zone { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-editor .gutter-insert, .monaco-diff-editor .gutter-insert { background-color: rgba(155, 185, 85, 0.2); }
+.monaco-editor .char-delete, .monaco-diff-editor .char-delete { background-color: rgba(255, 0, 0, 0.4); }
+.monaco-editor .line-delete, .monaco-diff-editor .line-delete { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-editor .inline-deleted-margin-view-zone { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-editor .gutter-delete, .monaco-diff-editor .gutter-delete { background-color: rgba(255, 0, 0, 0.2); }
+.monaco-diff-editor.side-by-side .editor.modified { box-shadow: -6px 0 5px -5px #000000; }
+
+			.monaco-diff-editor .diffViewport {
+				background: rgba(121, 121, 121, 0.4);
+			}
+		
+
+			.monaco-diff-editor .diffViewport:hover {
+				background: rgba(100, 100, 100, 0.7);
+			}
+		
+
+			.monaco-diff-editor .diffViewport:active {
+				background: rgba(191, 191, 191, 0.4);
+			}
+		
+
+	.monaco-editor .diagonal-fill {
+		background-image: linear-gradient(
+			-45deg,
+			rgba(204, 204, 204, 0.2) 12.5%,
+			#0000 12.5%, #0000 50%,
+			rgba(204, 204, 204, 0.2) 50%, rgba(204, 204, 204, 0.2) 62.5%,
+			#0000 62.5%, #0000 100%
+		);
+		background-size: 8px 8px;
+	}
+	
+.monaco-editor .bracket-match { background-color: rgba(0, 100, 0, 0.1); }
+.monaco-editor .bracket-match { border: 1px solid #888888; }
+
+		.monaco-editor .contentWidgets .codicon.codicon-light-bulb {
+			color: #ffcc00;
+			background-color: rgba(32, 37, 40, 0.7);
+		}
+
+		.monaco-editor .contentWidgets .codicon.codicon-lightbulb-autofix {
+			color: #75beff;
+			background-color: rgba(32, 37, 40, 0.7);
+		}
+.monaco-editor .goto-definition-link { color: #4e94ce !important; }
+
+			.monaco-editor .zone-widget .codicon.codicon-error,
+			.markers-panel .marker-icon.codicon.codicon-error,
+			.text-search-provider-messages .providerMessage .codicon.codicon-error,
+			.extensions-viewlet > .extensions .codicon.codicon-error {
+				color: #f14c4c;
+			}
+		
+
+			.monaco-editor .zone-widget .codicon.codicon-warning,
+			.markers-panel .marker-icon.codicon.codicon-warning,
+			.extensions-viewlet > .extensions .codicon.codicon-warning,
+			.extension-editor .codicon.codicon-warning,
+			.text-search-provider-messages .providerMessage .codicon.codicon-warning,
+			.preferences-editor .codicon.codicon-warning {
+				color: #cca700;
+			}
+		
+
+			.monaco-editor .zone-widget .codicon.codicon-info,
+			.markers-panel .marker-icon.codicon.codicon-info,
+			.extensions-viewlet > .extensions .codicon.codicon-info,
+			.text-search-provider-messages .providerMessage .codicon.codicon-info,
+			.extension-editor .codicon.codicon-info {
+				color: #3794ff;
+			}
+		
+.monaco-hover .hover-contents a.code-link span { color: #3794ff; }
+.monaco-hover .hover-contents a.code-link span:hover { color: #3794ff; }
+.monaco-editor .hoverHighlight { background-color: rgba(38, 79, 120, 0.25); }
+.monaco-editor .monaco-hover { background-color: #252526; }
+.monaco-editor .monaco-hover { border: 1px solid #454545; }
+.monaco-editor .monaco-hover .hover-row:not(:first-child):not(:empty) { border-top: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .monaco-hover hr { border-top: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .monaco-hover hr { border-bottom: 0px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .monaco-hover a { color: #3794ff; }
+.monaco-editor .monaco-hover a:hover { color: #3794ff; }
+.monaco-editor .monaco-hover { color: #cccccc; }
+.monaco-editor .monaco-hover .hover-row .actions { background-color: #2c2c2d; }
+.monaco-editor .monaco-hover code { background-color: rgba(10, 10, 10, 0.4); }
+.monaco-editor .findOptionsWidget { background-color: #252526; }
+.monaco-editor .findOptionsWidget { color: #cccccc; }
+.monaco-editor .findOptionsWidget { box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.36); }
+.monaco-editor .findMatch { background-color: rgba(234, 92, 0, 0.33); }
+.monaco-editor .currentFindMatch { background-color: #515c6a; }
+.monaco-editor .findScope { background-color: rgba(58, 61, 65, 0.4); }
+.monaco-editor .find-widget { background-color: #252526; }
+.monaco-editor .find-widget { box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.36); }
+.monaco-editor .find-widget { color: #cccccc; }
+.monaco-editor .find-widget.no-results .matchesCount { color: #f48771; }
+.monaco-editor .find-widget .monaco-sash { background-color: #454545; }
+
+		.monaco-editor .find-widget .button:not(.disabled):hover,
+		.monaco-editor .find-widget .codicon-find-selection:hover {
+			background-color: rgba(90, 93, 94, 0.31) !important;
+		}
+	
+.monaco-editor .find-widget .monaco-inputbox.synthetic-focus { outline-color: #007fd4; }
+.monaco-editor .folded-background { background-color: rgba(89, 123, 171, 0.3); }
+
+		.monaco-editor .cldr.codicon.codicon-folding-expanded,
+		.monaco-editor .cldr.codicon.codicon-folding-collapsed,
+		.monaco-editor .cldr.codicon.codicon-folding-manual-expanded,
+		.monaco-editor .cldr.codicon.codicon-folding-manual-collapsed {
+			color: #c5c5c5 !important;
+		}
+		
+.codicon.codicon-symbol-array { color: #cccccc; }
+.codicon.codicon-symbol-boolean { color: #cccccc; }
+.codicon.codicon-symbol-class { color: #ee9d28; }
+.codicon.codicon-symbol-method { color: #b180d7; }
+.codicon.codicon-symbol-color { color: #cccccc; }
+.codicon.codicon-symbol-constant { color: #cccccc; }
+.codicon.codicon-symbol-constructor { color: #b180d7; }
+
+			.codicon.codicon-symbol-value,.codicon.codicon-symbol-enum { color: #ee9d28; }
+.codicon.codicon-symbol-enum-member { color: #75beff; }
+.codicon.codicon-symbol-event { color: #ee9d28; }
+.codicon.codicon-symbol-field { color: #75beff; }
+.codicon.codicon-symbol-file { color: #cccccc; }
+.codicon.codicon-symbol-folder { color: #cccccc; }
+.codicon.codicon-symbol-function { color: #b180d7; }
+.codicon.codicon-symbol-interface { color: #75beff; }
+.codicon.codicon-symbol-key { color: #cccccc; }
+.codicon.codicon-symbol-keyword { color: #cccccc; }
+.codicon.codicon-symbol-module { color: #cccccc; }
+.codicon.codicon-symbol-namespace { color: #cccccc; }
+.codicon.codicon-symbol-null { color: #cccccc; }
+.codicon.codicon-symbol-number { color: #cccccc; }
+.codicon.codicon-symbol-object { color: #cccccc; }
+.codicon.codicon-symbol-operator { color: #cccccc; }
+.codicon.codicon-symbol-package { color: #cccccc; }
+.codicon.codicon-symbol-property { color: #cccccc; }
+.codicon.codicon-symbol-reference { color: #cccccc; }
+.codicon.codicon-symbol-snippet { color: #cccccc; }
+.codicon.codicon-symbol-string { color: #cccccc; }
+.codicon.codicon-symbol-struct { color: #cccccc; }
+.codicon.codicon-symbol-text { color: #cccccc; }
+.codicon.codicon-symbol-type-parameter { color: #cccccc; }
+.codicon.codicon-symbol-unit { color: #cccccc; }
+.codicon.codicon-symbol-variable { color: #75beff; }
+.monaco-editor .ghost-text-decoration { color: rgba(255, 255, 255, 0.34) !important; }
+.monaco-editor .ghost-text-decoration-preview { color: rgba(255, 255, 255, 0.34) !important; }
+.monaco-editor .suggest-preview-text .ghost-text { color: rgba(255, 255, 255, 0.34) !important; }
+.monaco-editor.vs .valueSetReplacement { outline: solid 2px #888888; }
+.monaco-editor .linked-editing-decoration { background: rgba(255, 0, 0, 0.3); border-left-color: rgba(255, 0, 0, 0.3); }
+.monaco-editor .detected-link-active { color: #4e94ce !important; }
+.monaco-editor .parameter-hints-widget { border: 1px solid #454545; }
+.monaco-editor .parameter-hints-widget.multiple .body { border-left: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .parameter-hints-widget .signature.has-docs { border-bottom: 1px solid rgba(69, 69, 69, 0.5); }
+.monaco-editor .parameter-hints-widget { background-color: #252526; }
+.monaco-editor .parameter-hints-widget a { color: #3794ff; }
+.monaco-editor .parameter-hints-widget a:hover { color: #3794ff; }
+.monaco-editor .parameter-hints-widget { color: #cccccc; }
+.monaco-editor .parameter-hints-widget code { background-color: rgba(10, 10, 10, 0.4); }
+.monaco-editor .parameter-hints-widget .parameter.active { color: #2aaaff}
+.monaco-link { color: #3794ff; }
+.monaco-link:hover { color: #3794ff; }
+.monaco-editor .focused .selectionHighlight { background-color: rgba(64, 89, 126, 0.6); }
+.monaco-editor .selectionHighlight { background-color: rgba(64, 89, 126, 0.3); }
+.monaco-editor .wordHighlight { background-color: rgba(87, 87, 87, 0.72); }
+.monaco-editor .wordHighlightStrong { background-color: rgba(0, 73, 114, 0.72); }
+.monaco-editor .accessibilityHelpWidget { background-color: #252526; }
+.monaco-editor .accessibilityHelpWidget { color: #cccccc; }
+.monaco-editor .accessibilityHelpWidget { box-shadow: 0 2px 8px rgba(0, 0, 0, 0.36); }
+.monaco-editor .tokens-inspect-widget { border: 1px solid #454545; }
+.monaco-editor .tokens-inspect-widget .tokens-inspect-separator { background-color: #454545; }
+.monaco-editor .tokens-inspect-widget { background-color: #252526; }
+.monaco-editor .tokens-inspect-widget { color: #cccccc; }
+.monaco-editor { --vscode-foreground: #cccccc;
+--vscode-disabledForeground: rgba(204, 204, 204, 0.5);
+--vscode-errorForeground: #f48771;
+--vscode-descriptionForeground: rgba(204, 204, 204, 0.7);
+--vscode-icon-foreground: #c5c5c5;
+--vscode-focusBorder: #007fd4;
+--vscode-textSeparator-foreground: rgba(255, 255, 255, 0.18);
+--vscode-textLink-foreground: #3794ff;
+--vscode-textLink-activeForeground: #3794ff;
+--vscode-textPreformat-foreground: #d7ba7d;
+--vscode-textBlockQuote-background: rgba(127, 127, 127, 0.1);
+--vscode-textBlockQuote-border: rgba(0, 122, 204, 0.5);
+--vscode-textCodeBlock-background: rgba(10, 10, 10, 0.4);
+--vscode-widget-shadow: rgba(0, 0, 0, 0.36);
+--vscode-input-background: #3c3c3c;
+--vscode-input-foreground: #cccccc;
+--vscode-inputOption-activeBorder: rgba(0, 122, 204, 0);
+--vscode-inputOption-hoverBackground: rgba(90, 93, 94, 0.5);
+--vscode-inputOption-activeBackground: rgba(0, 127, 212, 0.4);
+--vscode-inputOption-activeForeground: #ffffff;
+--vscode-input-placeholderForeground: rgba(204, 204, 204, 0.5);
+--vscode-inputValidation-infoBackground: #063b49;
+--vscode-inputValidation-infoBorder: #007acc;
+--vscode-inputValidation-warningBackground: #352a05;
+--vscode-inputValidation-warningBorder: #b89500;
+--vscode-inputValidation-errorBackground: #5a1d1d;
+--vscode-inputValidation-errorBorder: #be1100;
+--vscode-dropdown-background: #3c3c3c;
+--vscode-dropdown-foreground: #f0f0f0;
+--vscode-dropdown-border: #3c3c3c;
+--vscode-checkbox-background: #3c3c3c;
+--vscode-checkbox-foreground: #f0f0f0;
+--vscode-checkbox-border: #3c3c3c;
+--vscode-button-foreground: #ffffff;
+--vscode-button-separator: rgba(255, 255, 255, 0.4);
+--vscode-button-background: #0e639c;
+--vscode-button-hoverBackground: #1177bb;
+--vscode-button-secondaryForeground: #ffffff;
+--vscode-button-secondaryBackground: #3a3d41;
+--vscode-button-secondaryHoverBackground: #45494e;
+--vscode-badge-background: #4d4d4d;
+--vscode-badge-foreground: #ffffff;
+--vscode-scrollbar-shadow: #000000;
+--vscode-scrollbarSlider-background: rgba(121, 121, 121, 0.4);
+--vscode-scrollbarSlider-hoverBackground: rgba(100, 100, 100, 0.7);
+--vscode-scrollbarSlider-activeBackground: rgba(191, 191, 191, 0.4);
+--vscode-progressBar-background: #0e70c0;
+--vscode-editorError-foreground: #f14c4c;
+--vscode-editorWarning-foreground: #cca700;
+--vscode-editorInfo-foreground: #3794ff;
+--vscode-editorHint-foreground: rgba(238, 238, 238, 0.7);
+--vscode-sash-hoverBorder: #007fd4;
+--vscode-editor-background: #202528;
+--vscode-editor-foreground: #ffffff;
+--vscode-editorStickyScroll-background: #202528;
+--vscode-editorStickyScrollHover-background: #2a2d2e;
+--vscode-editorWidget-background: #252526;
+--vscode-editorWidget-foreground: #cccccc;
+--vscode-editorWidget-border: #454545;
+--vscode-quickInput-background: #252526;
+--vscode-quickInput-foreground: #cccccc;
+--vscode-quickInputTitle-background: rgba(255, 255, 255, 0.1);
+--vscode-pickerGroup-foreground: #3794ff;
+--vscode-pickerGroup-border: #3f3f46;
+--vscode-keybindingLabel-background: rgba(128, 128, 128, 0.17);
+--vscode-keybindingLabel-foreground: #cccccc;
+--vscode-keybindingLabel-border: rgba(51, 51, 51, 0.6);
+--vscode-keybindingLabel-bottomBorder: rgba(68, 68, 68, 0.6);
+--vscode-editor-selectionBackground: #597bab;
+--vscode-editor-inactiveSelectionBackground: rgba(89, 123, 171, 0.5);
+--vscode-editor-selectionHighlightBackground: rgba(64, 89, 126, 0.6);
+--vscode-editor-findMatchBackground: #515c6a;
+--vscode-editor-findMatchHighlightBackground: rgba(234, 92, 0, 0.33);
+--vscode-editor-findRangeHighlightBackground: rgba(58, 61, 65, 0.4);
+--vscode-searchEditor-findMatchBackground: rgba(234, 92, 0, 0.22);
+--vscode-editor-hoverHighlightBackground: rgba(38, 79, 120, 0.25);
+--vscode-editorHoverWidget-background: #252526;
+--vscode-editorHoverWidget-foreground: #cccccc;
+--vscode-editorHoverWidget-border: #454545;
+--vscode-editorHoverWidget-statusBarBackground: #2c2c2d;
+--vscode-editorLink-activeForeground: #4e94ce;
+--vscode-editorInlayHint-foreground: rgba(255, 255, 255, 0.8);
+--vscode-editorInlayHint-background: rgba(77, 77, 77, 0.6);
+--vscode-editorInlayHint-typeForeground: rgba(255, 255, 255, 0.8);
+--vscode-editorInlayHint-typeBackground: rgba(77, 77, 77, 0.6);
+--vscode-editorInlayHint-parameterForeground: rgba(255, 255, 255, 0.8);
+--vscode-editorInlayHint-parameterBackground: rgba(77, 77, 77, 0.6);
+--vscode-editorLightBulb-foreground: #ffcc00;
+--vscode-editorLightBulbAutoFix-foreground: #75beff;
+--vscode-diffEditor-insertedTextBackground: rgba(156, 204, 44, 0.2);
+--vscode-diffEditor-removedTextBackground: rgba(255, 0, 0, 0.4);
+--vscode-diffEditor-insertedLineBackground: rgba(155, 185, 85, 0.2);
+--vscode-diffEditor-removedLineBackground: rgba(255, 0, 0, 0.2);
+--vscode-diffEditor-diagonalFill: rgba(204, 204, 204, 0.2);
+--vscode-list-focusOutline: #007fd4;
+--vscode-list-activeSelectionBackground: #04395e;
+--vscode-list-activeSelectionForeground: #ffffff;
+--vscode-list-inactiveSelectionBackground: #37373d;
+--vscode-list-hoverBackground: #2a2d2e;
+--vscode-list-dropBackground: #062f4a;
+--vscode-list-highlightForeground: #2aaaff;
+--vscode-list-focusHighlightForeground: #2aaaff;
+--vscode-list-invalidItemForeground: #b89500;
+--vscode-list-errorForeground: #f88070;
+--vscode-list-warningForeground: #cca700;
+--vscode-listFilterWidget-background: #252526;
+--vscode-listFilterWidget-outline: rgba(0, 0, 0, 0);
+--vscode-listFilterWidget-noMatchesOutline: #be1100;
+--vscode-listFilterWidget-shadow: rgba(0, 0, 0, 0.36);
+--vscode-list-filterMatchBackground: rgba(234, 92, 0, 0.33);
+--vscode-tree-indentGuidesStroke: #585858;
+--vscode-tree-tableColumnsBorder: rgba(204, 204, 204, 0.13);
+--vscode-tree-tableOddRowsBackground: rgba(204, 204, 204, 0.04);
+--vscode-list-deemphasizedForeground: #8c8c8c;
+--vscode-quickInputList-focusForeground: #ffffff;
+--vscode-quickInputList-focusBackground: #04395e;
+--vscode-menu-foreground: #f0f0f0;
+--vscode-menu-background: #3c3c3c;
+--vscode-menu-selectionForeground: #ffffff;
+--vscode-menu-selectionBackground: #04395e;
+--vscode-menu-separatorBackground: #606060;
+--vscode-toolbar-hoverBackground: rgba(90, 93, 94, 0.31);
+--vscode-toolbar-activeBackground: rgba(99, 102, 103, 0.31);
+--vscode-editor-snippetTabstopHighlightBackground: rgba(124, 124, 124, 0.3);
+--vscode-editor-snippetFinalTabstopHighlightBorder: #525252;
+--vscode-breadcrumb-foreground: rgba(204, 204, 204, 0.8);
+--vscode-breadcrumb-background: #202528;
+--vscode-breadcrumb-focusForeground: #e0e0e0;
+--vscode-breadcrumb-activeSelectionForeground: #e0e0e0;
+--vscode-breadcrumbPicker-background: #252526;
+--vscode-merge-currentHeaderBackground: rgba(64, 200, 174, 0.5);
+--vscode-merge-currentContentBackground: rgba(64, 200, 174, 0.2);
+--vscode-merge-incomingHeaderBackground: rgba(64, 166, 255, 0.5);
+--vscode-merge-incomingContentBackground: rgba(64, 166, 255, 0.2);
+--vscode-merge-commonHeaderBackground: rgba(96, 96, 96, 0.4);
+--vscode-merge-commonContentBackground: rgba(96, 96, 96, 0.16);
+--vscode-editorOverviewRuler-currentContentForeground: rgba(64, 200, 174, 0.5);
+--vscode-editorOverviewRuler-incomingContentForeground: rgba(64, 166, 255, 0.5);
+--vscode-editorOverviewRuler-commonContentForeground: rgba(96, 96, 96, 0.4);
+--vscode-editorOverviewRuler-findMatchForeground: rgba(209, 134, 22, 0.49);
+--vscode-editorOverviewRuler-selectionHighlightForeground: rgba(160, 160, 160, 0.8);
+--vscode-minimap-findMatchHighlight: #d18616;
+--vscode-minimap-selectionOccurrenceHighlight: #676767;
+--vscode-minimap-selectionHighlight: #264f78;
+--vscode-minimap-errorHighlight: rgba(255, 18, 18, 0.7);
+--vscode-minimap-warningHighlight: #cca700;
+--vscode-minimap-foregroundOpacity: #000000;
+--vscode-minimapSlider-background: rgba(121, 121, 121, 0.2);
+--vscode-minimapSlider-hoverBackground: rgba(100, 100, 100, 0.35);
+--vscode-minimapSlider-activeBackground: rgba(191, 191, 191, 0.2);
+--vscode-problemsErrorIcon-foreground: #f14c4c;
+--vscode-problemsWarningIcon-foreground: #cca700;
+--vscode-problemsInfoIcon-foreground: #3794ff;
+--vscode-charts-foreground: #cccccc;
+--vscode-charts-lines: rgba(204, 204, 204, 0.5);
+--vscode-charts-red: #f14c4c;
+--vscode-charts-blue: #3794ff;
+--vscode-charts-yellow: #cca700;
+--vscode-charts-orange: #d18616;
+--vscode-charts-green: #89d185;
+--vscode-charts-purple: #b180d7;
+--vscode-editor-lineHighlightBackground: #262b2e;
+--vscode-editor-lineHighlightBorder: #282828;
+--vscode-editor-rangeHighlightBackground: rgba(255, 255, 255, 0.04);
+--vscode-editor-symbolHighlightBackground: rgba(234, 92, 0, 0.33);
+--vscode-editorCursor-foreground: #7da5dc;
+--vscode-editorWhitespace-foreground: #545454;
+--vscode-editorIndentGuide-background: #545454;
+--vscode-editorIndentGuide-activeBackground: #545454;
+--vscode-editorLineNumber-foreground: #858585;
+--vscode-editorActiveLineNumber-foreground: #c6c6c6;
+--vscode-editorLineNumber-activeForeground: #c6c6c6;
+--vscode-editorRuler-foreground: #5a5a5a;
+--vscode-editorCodeLens-foreground: #999999;
+--vscode-editorBracketMatch-background: rgba(0, 100, 0, 0.1);
+--vscode-editorBracketMatch-border: #888888;
+--vscode-editorOverviewRuler-border: rgba(127, 127, 127, 0.3);
+--vscode-editorGutter-background: #202528;
+--vscode-editorUnnecessaryCode-opacity: rgba(0, 0, 0, 0.67);
+--vscode-editorGhostText-foreground: rgba(255, 255, 255, 0.34);
+--vscode-editorOverviewRuler-rangeHighlightForeground: rgba(0, 122, 204, 0.6);
+--vscode-editorOverviewRuler-errorForeground: rgba(255, 18, 18, 0.7);
+--vscode-editorOverviewRuler-warningForeground: #cca700;
+--vscode-editorOverviewRuler-infoForeground: #3794ff;
+--vscode-editorBracketHighlight-foreground1: #ffd700;
+--vscode-editorBracketHighlight-foreground2: #da70d6;
+--vscode-editorBracketHighlight-foreground3: #179fff;
+--vscode-editorBracketHighlight-foreground4: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-foreground5: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-foreground6: rgba(0, 0, 0, 0);
+--vscode-editorBracketHighlight-unexpectedBracket-foreground: rgba(255, 18, 18, 0.8);
+--vscode-editorBracketPairGuide-background1: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background2: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background3: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background4: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background5: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-background6: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground1: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground2: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground3: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground4: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground5: rgba(0, 0, 0, 0);
+--vscode-editorBracketPairGuide-activeBackground6: rgba(0, 0, 0, 0);
+--vscode-editorUnicodeHighlight-border: #bd9b03;
+--vscode-editorUnicodeHighlight-background: rgba(189, 155, 3, 0.15);
+--vscode-editorOverviewRuler-bracketMatchForeground: #a0a0a0;
+--vscode-peekViewTitle-background: rgba(55, 148, 255, 0.1);
+--vscode-peekViewTitleLabel-foreground: #ffffff;
+--vscode-peekViewTitleDescription-foreground: rgba(204, 204, 204, 0.7);
+--vscode-peekView-border: #3794ff;
+--vscode-peekViewResult-background: #252526;
+--vscode-peekViewResult-lineForeground: #bbbbbb;
+--vscode-peekViewResult-fileForeground: #ffffff;
+--vscode-peekViewResult-selectionBackground: rgba(51, 153, 255, 0.2);
+--vscode-peekViewResult-selectionForeground: #ffffff;
+--vscode-peekViewEditor-background: #001f33;
+--vscode-peekViewEditorGutter-background: #001f33;
+--vscode-peekViewResult-matchHighlightBackground: rgba(234, 92, 0, 0.3);
+--vscode-peekViewEditor-matchHighlightBackground: rgba(255, 143, 0, 0.6);
+--vscode-editorMarkerNavigationError-background: #f14c4c;
+--vscode-editorMarkerNavigationError-headerBackground: rgba(241, 76, 76, 0.1);
+--vscode-editorMarkerNavigationWarning-background: #cca700;
+--vscode-editorMarkerNavigationWarning-headerBackground: rgba(204, 167, 0, 0.1);
+--vscode-editorMarkerNavigationInfo-background: #3794ff;
+--vscode-editorMarkerNavigationInfo-headerBackground: rgba(55, 148, 255, 0.1);
+--vscode-editorMarkerNavigation-background: #202528;
+--vscode-editor-foldBackground: rgba(89, 123, 171, 0.3);
+--vscode-editorGutter-foldingControlForeground: #c5c5c5;
+--vscode-symbolIcon-arrayForeground: #cccccc;
+--vscode-symbolIcon-booleanForeground: #cccccc;
+--vscode-symbolIcon-classForeground: #ee9d28;
+--vscode-symbolIcon-colorForeground: #cccccc;
+--vscode-symbolIcon-constantForeground: #cccccc;
+--vscode-symbolIcon-constructorForeground: #b180d7;
+--vscode-symbolIcon-enumeratorForeground: #ee9d28;
+--vscode-symbolIcon-enumeratorMemberForeground: #75beff;
+--vscode-symbolIcon-eventForeground: #ee9d28;
+--vscode-symbolIcon-fieldForeground: #75beff;
+--vscode-symbolIcon-fileForeground: #cccccc;
+--vscode-symbolIcon-folderForeground: #cccccc;
+--vscode-symbolIcon-functionForeground: #b180d7;
+--vscode-symbolIcon-interfaceForeground: #75beff;
+--vscode-symbolIcon-keyForeground: #cccccc;
+--vscode-symbolIcon-keywordForeground: #cccccc;
+--vscode-symbolIcon-methodForeground: #b180d7;
+--vscode-symbolIcon-moduleForeground: #cccccc;
+--vscode-symbolIcon-namespaceForeground: #cccccc;
+--vscode-symbolIcon-nullForeground: #cccccc;
+--vscode-symbolIcon-numberForeground: #cccccc;
+--vscode-symbolIcon-objectForeground: #cccccc;
+--vscode-symbolIcon-operatorForeground: #cccccc;
+--vscode-symbolIcon-packageForeground: #cccccc;
+--vscode-symbolIcon-propertyForeground: #cccccc;
+--vscode-symbolIcon-referenceForeground: #cccccc;
+--vscode-symbolIcon-snippetForeground: #cccccc;
+--vscode-symbolIcon-stringForeground: #cccccc;
+--vscode-symbolIcon-structForeground: #cccccc;
+--vscode-symbolIcon-textForeground: #cccccc;
+--vscode-symbolIcon-typeParameterForeground: #cccccc;
+--vscode-symbolIcon-unitForeground: #cccccc;
+--vscode-symbolIcon-variableForeground: #75beff;
+--vscode-editorSuggestWidget-background: #252526;
+--vscode-editorSuggestWidget-border: #454545;
+--vscode-editorSuggestWidget-foreground: #ffffff;
+--vscode-editorSuggestWidget-selectedForeground: #ffffff;
+--vscode-editorSuggestWidget-selectedBackground: #04395e;
+--vscode-editorSuggestWidget-highlightForeground: #2aaaff;
+--vscode-editorSuggestWidget-focusHighlightForeground: #2aaaff;
+--vscode-editorSuggestWidgetStatus-foreground: rgba(255, 255, 255, 0.5);
+--vscode-editor-linkedEditingBackground: rgba(255, 0, 0, 0.3);
+--vscode-editorHoverWidget-highlightForeground: #2aaaff;
+--vscode-editor-wordHighlightBackground: rgba(87, 87, 87, 0.72);
+--vscode-editor-wordHighlightStrongBackground: rgba(0, 73, 114, 0.72);
+--vscode-editorOverviewRuler-wordHighlightForeground: rgba(160, 160, 160, 0.8);
+--vscode-editorOverviewRuler-wordHighlightStrongForeground: rgba(192, 160, 192, 0.8); }
+
+.mtk1 { color: #ffffff; }
+.mtk2 { color: #24292d; }
+.mtk3 { color: #cc6666; }
+.mtk4 { color: #9cdcfe; }
+.mtk5 { color: #ce9178; }
+.mtk6 { color: #d4d4d4; }
+.mtk7 { color: #b5cea8; }
+.mtk8 { color: #608b4e; }
+.mtk9 { color: #569cd6; }
+.mtk10 { color: #dcdcdc; }
+.mtk11 { color: #808080; }
+.mtk12 { color: #f44747; }
+.mtk13 { color: #c586c0; }
+.mtk14 { color: #a79873; }
+.mtk15 { color: #dd6a6f; }
+.mtk16 { color: #5bb498; }
+.mtk17 { color: #909090; }
+.mtk18 { color: #778899; }
+.mtk19 { color: #ff00ff; }
+.mtk20 { color: #b46695; }
+.mtk21 { color: #ff0000; }
+.mtk22 { color: #4f76ac; }
+.mtk23 { color: #3dc9b0; }
+.mtk24 { color: #74b0df; }
+.mtk25 { color: #4864aa; }
+.mtki { font-style: italic; }
+.mtkb { font-weight: bold; }
+.mtku { text-decoration: underline; text-underline-position: under; }
+.mtks { text-decoration: line-through; }
+.mtks.mtku { text-decoration: underline line-through; text-underline-position: under; }</style><style type="text/css" media="screen">
+		.monaco-editor .codelens-decoration._ee1f61 { line-height: 17px; font-size: 13px; padding-right: 7px; font-feature-settings: var(--codelens-font-features_ee1f61) }
+		.monaco-editor .codelens-decoration._ee1f61 span.codicon { line-height: 17px; font-size: 13px; }
+		</style><style type="text/css" media="screen">
+		.monaco-editor .codelens-decoration._ee1f62 { line-height: 17px; font-size: 13px; padding-right: 7px; font-feature-settings: var(--codelens-font-features_ee1f62) }
+		.monaco-editor .codelens-decoration._ee1f62 span.codicon { line-height: 17px; font-size: 13px; }
+		</style><style type="text/css" media="screen">
+		.monaco-editor .codelens-decoration._ee1f63 { line-height: 17px; font-size: 13px; padding-right: 7px; font-feature-settings: var(--codelens-font-features_ee1f63) }
+		.monaco-editor .codelens-decoration._ee1f63 span.codicon { line-height: 17px; font-size: 13px; }
+		</style><style type="text/css" media="screen">.dyn-rule-1-0 {
+	background-color: rgba(33, 150, 243, 1);
+}</style><style type="text/css" media="screen">.dyn-rule-1-1 {
+	background-color: rgba(213, 83, 154, 1);
+}</style><style type="text/css" media="screen">.dyn-rule-1-2 {
+	background-color: rgba(255, 255, 255, 1);
+}</style><style type="text/css" media="screen">.dyn-rule-1-3 {
+	background-color: rgba(238, 247, 67, 1);
+}</style><style type="text/css" media="screen">.dyn-rule-1-4 {
+	background-color: rgba(248, 239, 214, 1);
+}</style><style type="text/css" media="screen">.dyn-rule-1-5 {
+	background-color: rgba(23, 106, 137, 1);
+}</style></head>
+  <body class="bg-zapp-background text-black/80 dark:text-white">
+    
+    <script>
+      var theme = new URLSearchParams(location.search).get('theme');
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else if (theme === 'light') {
+        // Noop
+      } else if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+    
+    <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).only=t=>{(async()=>await(await t())())()},window.dispatchEvent(new Event("astro:only"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><noscript>Please enable JavaScript to run this application.</noscript><astro-island uid="ylh7b" component-url="/_astro/entry.77c7ce43.js" component-export="default" renderer-url="/_astro/client.bb937a54.js" props="{&quot;metadata&quot;:[0,{&quot;can_edit&quot;:[0,false],&quot;project&quot;:[0,{&quot;id&quot;:[0,&quot;zg6w066rg6x0&quot;],&quot;created_at&quot;:[0,&quot;2024-08-29T14:17:47.382Z&quot;],&quot;updated_at&quot;:[0,&quot;2024-08-30T17:46:28.865Z&quot;],&quot;uid&quot;:[0,&quot;pIkUQpvCQGOEX9D1hXhfHUydx8J3&quot;],&quot;private&quot;:[0,false],&quot;name&quot;:[0,&quot;Flutter&quot;],&quot;description&quot;:[0,&quot;A new Flutter project.&quot;],&quot;archive&quot;:[0,&quot;public/pIkUQpvCQGOEX9D1hXhfHUydx8J3/zg6w066rg6x0/a58d7da8-5189-41d4-9b50-3dd6f74252e4.zip&quot;],&quot;oid&quot;:[0,&quot;pIkUQpvCQGOEX9D1hXhfHUydx8J3&quot;],&quot;deleted&quot;:[0,false],&quot;metadata&quot;:[0,{&quot;sdk&quot;:[0,&quot;flutter&quot;],&quot;flutter_version&quot;:[0,&quot;3.7.3&quot;],&quot;zapp_build_id&quot;:[0,&quot;44670871-08d5-4572-80db-0b8a78242fc6&quot;],&quot;based_on_id&quot;:[0,&quot;z5mk06d35ml0&quot;]}],&quot;stats&quot;:[0,{&quot;views&quot;:[0,4],&quot;forks&quot;:[0,2]}]}],&quot;owner&quot;:[0,{&quot;public_project_count&quot;:[0,7],&quot;display_name&quot;:[0,&quot;&quot;],&quot;bio&quot;:[0,null],&quot;photo_url&quot;:[0,&quot;https://avatars.githubusercontent.com/u/179961601?v=4&quot;],&quot;is_user&quot;:[0,true],&quot;is_anonymous&quot;:[0,false]}]}]}" client="only" opts="{&quot;name&quot;:&quot;Client&quot;,&quot;value&quot;:&quot;solid-js&quot;}"><div class="grid h-[100vh]" style="grid-template-columns: 50px 240px 4px 1fr 4px 1fr; grid-template-rows: 40px 1fr 4px 200px 40px;"><!--#--><div class="relative z-10 bg-zapp-border transition-colors hover:bg-black/60 col-start-3 col-end-3 cursor-col-resize row-start-2 row-end-5" id="gutter-vertical-1"></div><!--/--><!--#--><div class="relative z-10 bg-zapp-border transition-colors hover:bg-black/60 col-start-5 col-end-5 cursor-col-resize row-start-2 row-end-5" id="gutter-vertical-2"></div><!--/--><!--#--><div class="relative z-10 bg-zapp-border transition-colors hover:bg-black/60 col-start-4 row-start-3 row-end-3 cursor-row-resize col-end-5" id="gutter-row-1"></div><!--/--><!--#--><section class="relative col-span-full row-span-1"><header class="grid h-full grid-cols-[auto,1fr] items-center bg-zapp-foreground px-4"><div class="col-start-1 col-end-1 flex items-center"><a href="https://zapp.run/" class="block h-6 w-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191.04 200"><g><polygon fill="#66C8F3" points="153.3,0 77.04,0 0,133.33 76.26,133.33"></polygon><lineargradient id="logo-grad1" gradientUnits="userSpaceOnUse" x1="57.3907" y1="39.3963" x2="57.3907" y2="154.1778"><stop offset="0" stop-color="#50B4E7"></stop><stop offset="0.9995" stop-color="#4CB4E7"></stop></lineargradient><polygon fill="url(#logo-grad1)" points="114.78,66.67 38.52,66.67 0,133.33 76.26,133.33"></polygon><polygon fill="#085A9D" points="191.04,66.67 114.78,66.67 37.74,200 114.01,200 "></polygon><lineargradient id="logo-grad2" gradientUnits="userSpaceOnUse" x1="90.1002" y1="100" x2="134.7266" y2="100"><stop offset="0" stop-color="#174E95"></stop><stop offset="1" stop-color="#164E96" stop-opacity="0"></stop></lineargradient><polygon fill="url(#logo-grad2)" points="152.66,66.67 114.78,66.67 76.26,133.33 152.66,66.67"></polygon></g></svg></a></div><div class="col-start-2 col-end-2 flex h-full items-center justify-end gap-2"><div class="transition-opacity flex items-center gap-2 opacity-100"><button class="item-center flex justify-center gap-2 whitespace-nowrap rounded border px-3 py-1 font-open-sans text-[12px] transition border-transparent hover:border-black/30 dark:hover:border-white/70" title="Sign in with GitHub" aria-label="Sign in with GitHub"><!--#--><span class="relative top-[0px] h-4 w-4"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg></span><!--/--><!--#--><span>Sign in with GitHub</span><!--/--></button><button class="item-center flex justify-center gap-2 whitespace-nowrap rounded border px-3 py-1 font-open-sans text-[12px] transition border-transparent hover:border-black/30 dark:hover:border-white/70" title="Open embed dialog" aria-label="Open embed dialog"><!--#--><span class="relative top-[0px] h-4 w-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg></span><!--/--><!--#--><span><span>Embed</span></span><!--/--></button><button class="item-center flex justify-center gap-2 whitespace-nowrap rounded border px-3 py-1 font-open-sans text-[12px] transition text-white border-blue-500 bg-blue-500 hover:bg-blue-400 hover:border-blue-400" title="Fork to another project" aria-label="Fork to another project"><!--#--><span class="relative top-[0px] h-4 w-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" fill="currentColor" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"></path></svg></span><!--/--><!--#--><span><span>Fork</span></span><!--/--></button><div class="w-[150px]"><div class="relative"><select name="entrypoint-select" class="w-full appearance-none truncate border border-zapp-border bg-zapp-background py-1 pl-3 pr-8 text-sm focus:border-transparent focus:outline-none focus:ring-1 focus:ring-blue-400 " id="entrypoint-select" title="Select entrypoint"><option value="/zapp/project/lib/main.dart">main.dart</option><option value="/zapp/project/test/widget_test.dart">widget_test.dart</option></select><div class="pointer-events-none absolute top-1 right-2 h-5 w-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></div></div></div><button title="Stop application" class="pl-1 transition-opacity hover:opacity-75"><div class="h-5 w-5 text-red-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M4.5 7.5a3 3 0 013-3h9a3 3 0 013 3v9a3 3 0 01-3 3h-9a3 3 0 01-3-3v-9z" clip-rule="evenodd"></path></svg></div></button><button title="Run application" class="pl-1 transition-opacity hover:opacity-75"><div class="h-5 w-5 text-green-500"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"></path></svg></div></button></div></div></header></section><!--/--><section class="relative col-start-1 col-end-2 row-start-2 row-end-5"><aside class="absolute inset-0 flex h-full w-full flex-col items-center overflow-y-auto border-t-2 border-r-2 border-zapp-border bg-zapp-foreground py-2"><div class="flex w-full flex-grow flex-col"><!--#--><button class="group relative flex h-12 w-full items-center justify-center border-l-[3px] transition-all hover:opacity-75 border-zapp text-gray-800 dark:text-white" title="Open project pane" aria-label="Open project pane"><div class="w-6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg></div></button><!--/--><!--#--><button class="group relative flex h-12 w-full items-center justify-center border-l-[3px] transition-all hover:opacity-75 border-transparent dark:text-gray-300" title="Open search pane" aria-label="Open search pane"><div class="w-6"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></div></button><!--/--><!--#--><button class="group relative flex h-12 w-full items-center justify-center border-l-[3px] transition-all hover:opacity-75 border-transparent dark:text-gray-300" title="Open source-control pane" aria-label="Open source-control pane"><div class="w-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" fill="currentColor" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"></path></svg><div class="absolute right-2 bottom-2 flex h-4 items-center justify-center rounded-full bg-blue-600 px-1.5 text-xs font-bold text-white">1</div></div></button><!--/--><!--#--><button class="group relative flex h-12 w-full items-center justify-center border-l-[3px] transition-all hover:opacity-75 border-transparent dark:text-gray-300" title="Open environment pane" aria-label="Open environment pane"><div class="w-6"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 000-1.788l-4.764-2.382a1 1 0 00-.894 0L4.789 4.488a1 1 0 000 1.788l4.764 2.382a1 1 0 00.894 0l4.764-2.382zM4.447 8.342A1 1 0 003 9.236V15a1 1 0 00.553.894l4 2A1 1 0 009 17v-5.764a1 1 0 00-.553-.894l-4-2z"></path></svg></div></button><!--/--></div><div class="w-full flex-shrink-0"><div title="Select theme" aria-label="Select theme" role="button" class="relative flex h-12 w-full items-center justify-center text-gray-600 hover:opacity-75 dark:text-gray-300"><select name="theme" id="theme" class="absolute inset-0 cursor-pointer appearance-none opacity-0"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option></select><div class="w-6 "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg></div></div></div></aside></section><section class="relative col-start-2 col-end-3 row-start-2 row-end-5"><!--#--><div class="absolute inset-0 bottom-10 border-b-2 border-zapp-border"><div class="relative h-full w-full"><div class="grid h-full grid-rows-[auto,7fr,3fr]"><!--#--><section class="relative min-w-0 border-t-2 border-zapp-border bg-zapp-foreground p-3"><!--#--><div class="transition-opacity opacity-100"><div class="flex items-center gap-2"><h1 class="flex-1 truncate text-sm font-medium tracking-wide">Flutter</h1><!--#--><!--/--></div><p class="mt-2 text-xs opacity-75">A new Flutter project.</p><div class="mt-4 flex items-center gap-3 text-xs"><!--#--><img alt="Photo" class="h-5 w-5 rounded-full" src="./Flutter - A new Flutter project. _ Zapp!_files/179961601"><!--/--><span></span></div><div class="mt-3 flex cursor-default items-center gap-2 opacity-50"><!--#--><div class="flex items-center gap-1" title="Views" aria-label="Views"><span class="h-3 w-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10 12.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path><path fill-rule="evenodd" d="M.664 10.59a1.651 1.651 0 010-1.186A10.004 10.004 0 0110 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0110 17c-4.257 0-7.893-2.66-9.336-6.41zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg></span><span class="text-[12px]">4</span></div><!--/--><!--#--><div class="flex items-center gap-1" title="Forks" aria-label="Forks"><span class="h-3 w-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" fill="currentColor" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"></path></svg></span><span class="text-[12px]">2</span></div><!--/--></div></div><!--/--><div class="transition-opavity opacity-100 opacity-0"></div></section><!--/--><!--#--><div class="relative h-full border-t-2 border-zapp-border bg-zapp-foreground text-sm"><div class="flex h-10 items-center border-b-2 border-zapp-border px-3"><h3 class="flex-grow font-bold">Explorer</h3><!--#--><div class="transition-opacity flex items-center gap-2 opacity-100"><button title="Upload file(s)" class="h-4 w-4 hover:opacity-75"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd"></path></svg></button><button title="Create file" class="h-4 w-4 hover:opacity-75"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd"></path></svg></button><button title="Create directory" class="h-4 w-4 hover:opacity-75"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-5L9 4H4zm7 5a1 1 0 10-2 0v1H8a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V9z"></path></svg></button></div><!--/--></div><!--#--><div class="transition-opacity opacity-100"><div data-context-menu=""><div class="absolute inset-x-0 top-10 bottom-0 overflow-auto"><div data-context-menu=""><div class="relative opacity-50" data-parent="/zapp/project/"><div class="absolute top-[28px] bottom-0 w-px bg-black/5 dark:bg-white/5" style="left: calc(13px);"></div><button class="group relative flex w-full items-center whitespace-nowrap py-1 hover:bg-white/5" style="padding-left: 4px;"><div class="h-5 w-5 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></div><span class="truncate pl-1 pr-16">.dart_tool</span><div class="absolute right-3 hidden items-center gap-1 group-hover:flex"><div role="button" aria-label="Upload file(s)" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd"></path></svg></div><div role="button" aria-label="New file" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd"></path></svg></div><div role="button" aria-label="New directory" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-5L9 4H4zm7 5a1 1 0 10-2 0v1H8a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V9z"></path></svg></div></div></button><!--#--><!--/--></div></div><div data-context-menu=""><div class="relative opacity-50" data-parent="/zapp/project/"><div class="absolute top-[28px] bottom-0 w-px bg-black/5 dark:bg-white/5" style="left: calc(13px);"></div><button class="group relative flex w-full items-center whitespace-nowrap py-1 hover:bg-white/5" style="padding-left: 4px;"><div class="h-5 w-5 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></div><span class="truncate pl-1 pr-16">build</span><div class="absolute right-3 hidden items-center gap-1 group-hover:flex"><div role="button" aria-label="Upload file(s)" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd"></path></svg></div><div role="button" aria-label="New file" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd"></path></svg></div><div role="button" aria-label="New directory" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-5L9 4H4zm7 5a1 1 0 10-2 0v1H8a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V9z"></path></svg></div></div></button><!--#--><!--/--></div></div><div data-context-menu=""><div class="relative" data-parent="/zapp/project/"><div class="absolute top-[28px] bottom-0 w-px bg-black/5 dark:bg-white/5" style="left: calc(13px);"></div><button class="group relative flex w-full items-center whitespace-nowrap py-1 hover:bg-white/5" style="padding-left: 4px;"><div class="h-5 w-5 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></div><span class="truncate pl-1 pr-16">lib</span><div class="absolute right-3 hidden items-center gap-1 group-hover:flex"><div role="button" aria-label="Upload file(s)" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd"></path></svg></div><div role="button" aria-label="New file" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd"></path></svg></div><div role="button" aria-label="New directory" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-5L9 4H4zm7 5a1 1 0 10-2 0v1H8a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V9z"></path></svg></div></div></button><!--#--><div data-context-menu=""><div class="relative" data-parent="/zapp/project/lib"><div class="absolute top-[28px] bottom-0 w-px bg-black/5 dark:bg-white/5" style="left: calc(32px);"></div><button class="group relative flex w-full items-center whitespace-nowrap py-1 hover:bg-white/5" style="padding-left: 23px;"><div class="h-5 w-5 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></div><span class="truncate pl-1 pr-16">src</span><div class="absolute right-3 hidden items-center gap-1 group-hover:flex"><div role="button" aria-label="Upload file(s)" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd"></path></svg></div><div role="button" aria-label="New file" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd"></path></svg></div><div role="button" aria-label="New directory" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-5L9 4H4zm7 5a1 1 0 10-2 0v1H8a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V9z"></path></svg></div></div></button><!--#--><!--/--></div></div><div data-context-menu=""><button class="group relative flex w-full whitespace-nowrap py-1 hover:bg-black/5 dark:hover:bg-white/5" style="padding-left: 23px;"><div class="h-5 w-5 flex-shrink-0"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.618 1.566a.978.978 0 0 0-.682.281l-.01.007-6.388 3.692 6.372 6.372v.004l7.658 7.659 1.46-2.63-5.264-12.64-2.457-2.457a.972.972 0 0 0-.69-.288z" fill="#66C3FA"></path><path d="m5.553 5.531-3.69 6.383-.007.01a.967.967 0 0 0 .006 1.371l3.058 3.061 11.963 4.706 2.705-1.502-.073-.073-.019.002-7.5-7.512h-.009L5.553 5.53z" fill="#215896"></path><path d="m5.537 5.534 6.518 6.525h.01l7.501 7.51 2.856-.544.004-8.449-3.015-2.955c-.66-.647-1.675-1.064-2.695-1.202l.002-.032-11.18-.852z" fill="#235997"></path><path d="m5.545 5.542 6.522 6.522v.009l7.506 7.506-.546 2.855h-8.449l-2.954-3.017c-.647-.66-1.063-1.676-1.2-2.696l-.033.003-.846-11.182z" fill="#58B6F0"></path></svg></div><span class="truncate pl-1">main.dart</span><!--#--><!--/--></button></div><!--/--></div></div><div data-context-menu=""><div class="relative" data-parent="/zapp/project/"><div class="absolute top-[28px] bottom-0 w-px bg-black/5 dark:bg-white/5" style="left: calc(13px);"></div><button class="group relative flex w-full items-center whitespace-nowrap py-1 hover:bg-white/5" style="padding-left: 4px;"><div class="h-5 w-5 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></div><span class="truncate pl-1 pr-16">test</span><div class="absolute right-3 hidden items-center gap-1 group-hover:flex"><div role="button" aria-label="Upload file(s)" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd"></path></svg></div><div role="button" aria-label="New file" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd"></path></svg></div><div role="button" aria-label="New directory" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-5L9 4H4zm7 5a1 1 0 10-2 0v1H8a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V9z"></path></svg></div></div></button><!--#--><!--/--></div></div><div data-context-menu=""><div class="relative" data-parent="/zapp/project/"><div class="absolute top-[28px] bottom-0 w-px bg-black/5 dark:bg-white/5" style="left: calc(13px);"></div><button class="group relative flex w-full items-center whitespace-nowrap py-1 hover:bg-white/5" style="padding-left: 4px;"><div class="h-5 w-5 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></div><span class="truncate pl-1 pr-16">web</span><div class="absolute right-3 hidden items-center gap-1 group-hover:flex"><div role="button" aria-label="Upload file(s)" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd"></path></svg></div><div role="button" aria-label="New file" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clip-rule="evenodd"></path></svg></div><div role="button" aria-label="New directory" class="h-4 w-4 opacity-75 hover:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V8a2 2 0 00-2-2h-5L9 4H4zm7 5a1 1 0 10-2 0v1H8a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1V9z"></path></svg></div></div></button><!--#--><!--/--></div></div><div data-context-menu=""><button class="group relative flex w-full whitespace-nowrap py-1 hover:bg-black/5 dark:hover:bg-white/5" style="padding-left: 4px;"><div class="h-5 w-5 flex-shrink-0"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M2.25 15.75v-8h2l3 3 3-3h2v8h-2v-5.17l-3 3-3-3v5.17h-2m14-8h3v4h2.5l-4 4.5-4-4.5h2.5z" fill="#42a5f5"></path></svg></div><span class="truncate pl-1">README.md</span><!--#--><!--/--></button></div><div data-context-menu=""><button class="group relative flex w-full whitespace-nowrap py-1 hover:bg-black/5 dark:hover:bg-white/5 opacity-40" style="padding-left: 4px;"><div class="h-5 w-5 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg></div><span class="truncate pl-1">pubspec.lock</span><!--#--><!--/--></button></div><div data-context-menu=""><button class="group relative flex w-full whitespace-nowrap py-1 hover:bg-black/5 dark:hover:bg-white/5" style="padding-left: 4px;"><div class="h-5 w-5 flex-shrink-0"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 9h5.5L13 3.5V9M6 2h8l6 6v12c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2m12 16v-2H9v2h9m-4-4v-2H6v2z" fill="#FF5252"></path></svg></div><span class="truncate pl-1">pubspec.yaml</span><!--#--><!--/--></button></div></div></div></div><!--/--><div class="transition-opavity opacity-100 opacity-0"></div></div><!--/--><!--#--><div class="relative h-full border-t-2 border-zapp-border bg-zapp-foreground text-sm"><div class="flex h-10 items-center border-b-2 border-zapp-border px-3"><h3 class="flex-grow font-bold">Dependencies</h3></div><div class="absolute inset-0 top-10 overflow-auto"><ul><li class="my-px flex items-center gap-2 px-3 py-2 text-xs opacity-75 hover:bg-zapp-background"><div class="flex-grow whitespace-nowrap"><span>flutter</span></div><div class="flex-shrink-0 whitespace-nowrap text-[10px]"><code>sdk: flutter</code></div></li><li class="my-px flex items-center gap-2 px-3 py-2 text-xs opacity-75 hover:bg-zapp-background"><div class="flex-grow whitespace-nowrap"><a target="_blank" rel="noopener" class="flex items-center gap-1 truncate" href="https://pub.dev/packages/cupertino_icons"><span>cupertino_icons</span><span class="h-3 w-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg></span></a></div><div class="flex-shrink-0 whitespace-nowrap text-[10px]"><code>^1.0.2</code></div></li></ul><!--#--><div class="px-3 py-2 text-[10px] font-bold uppercase tracking-wider opacity-25"><span>Dev Dependencies</span></div><ul><li class="my-px flex items-center gap-2 px-3 py-2 text-xs opacity-75 hover:bg-zapp-background"><div class="flex-grow whitespace-nowrap"><span>flutter_test</span></div><div class="flex-shrink-0 whitespace-nowrap text-[10px]"><code>sdk: flutter</code></div></li><li class="my-px flex items-center gap-2 px-3 py-2 text-xs opacity-75 hover:bg-zapp-background"><div class="flex-grow whitespace-nowrap"><a target="_blank" rel="noopener" class="flex items-center gap-1 truncate" href="https://pub.dev/packages/flutter_lints"><span>flutter_lints</span><span class="h-3 w-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg></span></a></div><div class="flex-shrink-0 whitespace-nowrap text-[10px]"><code>^2.0.0</code></div></li></ul><!--/--></div></div><!--/--></div></div></div><!--/--><div class="absolute inset-x-0 bottom-0 h-10"><div class="relative flex h-full w-full items-center justify-center gap-4"><a href="https://zapp.run/on/github" target="_blank" class="block h-5 w-5 opacity-50 transition-opacity hover:opacity-100"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg></a><a href="https://zapp.run/on/twitter" target="_blank" class="block h-5 w-5 opacity-50 transition-opacity hover:opacity-100"><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a><a href="https://zapp.run/on/discord" target="_blank" class="relative top-[2px] block h-5 w-5 opacity-50 transition-opacity hover:opacity-100"><svg viewBox="0 0 256 256"><path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="currentColor" fill-rule="nonzero"></path></svg></a></div></div></section><section class="relative col-start-4 overflow-hidden col-end-5 row-start-2 row-end-2"><div class="flex h-14 bg-zapp-foreground"><!--#--><!--/--><div class="relative h-8 flex-grow"><div class="absolute left-0 right-0 flex h-8 items-center overflow-hidden border-t-2 border-zapp-border text-sm"></div></div><!--#--><!--/--><!--#--><div class="absolute inset-x-0 top-8 flex h-6 items-center bg-zapp-background px-3 text-xs text-black/50 dark:text-white/50"></div><!--/--></div><div class="transition-opacity absolute inset-x-0 top-14 bottom-0 opacity-100"><div class="absolute inset-0 row-start-1 row-end-2 overflow-hidden bg-zapp-background"><!--#--><div class="relative h-full w-full"><div class="pointer-events-none absolute inset-0 h-full opacity-0" data-keybinding-context="1" style="--codelens-font-features_ee1f61: &quot;liga&quot; off, &quot;calt&quot; off; --code-editorInlayHintsFontFamily: Consolas, &#39;Courier New&#39;, monospace;"></div><div class="pointer-events-none absolute inset-0 h-full opacity-0" data-keybinding-context="2"><div class="monaco-diff-editor monaco-editor-background side-by-side vs-dark" style="position: relative; height: 100%;"><div class="diffOverview" style="position: absolute; top: 0px; height: 248.438px; width: 30px; left: 456.031px;"><div class="diffViewport" style="position: absolute; width: 30px; height: 0px; top: 0px;"></div></div><div class="editor original" data-keybinding-context="3" style="position: absolute; height: 100%; --codelens-font-features_ee1f62: &quot;liga&quot; off, &quot;calt&quot; off; width: 228px; left: 0px;"></div><div class="editor modified" data-keybinding-context="4" style="position: absolute; height: 100%; --codelens-font-features_ee1f63: &quot;liga&quot; off, &quot;calt&quot; off; width: 258.031px; left: 228px;"></div><div class="diff-review monaco-editor-background" style="top: 248.438px; width: 486.031px; height: 0px;"><div class="monaco-scrollable-element " role="presentation" style="position: relative; overflow: hidden;"><div class="diff-review-content" role="code" style="overflow: hidden; height: 0px; width: 486.031px;"></div><div role="presentation" aria-hidden="true" class="invisible scrollbar horizontal" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; height: 10px; transform: translate3d(0px, 0px, 0px); contain: strict;"></div></div><div role="presentation" aria-hidden="true" class="invisible scrollbar vertical" style="position: absolute;"><div class="slider" style="position: absolute; top: 0px; left: 0px; width: 10px; transform: translate3d(0px, 0px, 0px); contain: strict;"></div></div><div class="shadow"></div><div class="shadow"></div><div class="shadow"></div></div></div><div class="diff-review-shadow" style="top: 242.438px; width: 486.031px; height: 0px;"></div><div class="diff-review-actions" aria-hidden="true" style="display: none;"><div class="monaco-action-bar animated"><ul class="actions-container" role="presentation"><li class="action-item" role="presentation" aria-label="Close" title="Close"><a class="action-label codicon close-diff-review codicon-diff-review-close" role="button" tabindex="0"></a></li></ul></div></div><div class="monaco-sash vertical" style="left: 226px; top: 0px; height: 248.438px;"></div></div></div></div><!--/--><!--#--><!--/--><!--#--><!--/--></div></div></section><section class="relative col-start-4 row-start-4 row-end-4 col-end-5"><section><div class="relative flex h-10 items-center px-4"><div class="flex flex-grow items-center gap-4 overflow-hidden"><!--#--><button class="flex items-center whitespace-nowrap border-b pb-[2px] text-sm uppercase transition-all border-zapp"><span>Logs</span><span></span></button><!--/--><!--#--><button class="flex items-center whitespace-nowrap border-b pb-[2px] text-sm uppercase transition-all border-transparent dark:text-white/70 dark:hover:text-white"><span>Problems</span><span></span></button><!--/--><!--#--><button class="flex items-center whitespace-nowrap border-b pb-[2px] text-sm uppercase transition-all border-transparent dark:text-white/70 dark:hover:text-white"><span>Output</span><span></span></button><!--/--></div><!--#--><!--/--><!--#--><button class="mx-1 flex h-5 w-5 flex-shrink-0 items-center justify-center transition-opacity hover:opacity-50" title="Clear logs" aria-label="Clear logs"><div class="h-5 w-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg></div></button><!--/--><!--#--><button class="mx-1 flex h-5 w-5 flex-shrink-0 items-center justify-center transition-opacity hover:opacity-50" title="Expand console" aria-label="Expand console"><div class="h-5 w-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg></div></button><!--/--><!--#--><button class="mx-1 flex h-5 w-5 flex-shrink-0 items-center justify-center transition-opacity hover:opacity-50" title="Collapse console" aria-label="Collapse console"><div class="h-5 w-5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></div></button><!--/--></div><div class="absolute inset-x-0 top-10 bottom-0 overflow-y-auto"><ul class="flex h-full flex-col-reverse divide-y divide-gray-100 overflow-y-auto whitespace-pre-wrap font-mono text-sm dark:divide-zapp-border [&amp;&gt;li]:px-4 [&amp;&gt;li]:py-[3px]"><div class="flex-1"></div><!--#--><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.110Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->00:02 +0 -1: Some tests failed.<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.110Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#--><!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.110Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->  The test description was: Counter increments smoke test<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.110Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->Test failed. See exception logs above.<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.070Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->00:02 +0: Counter increments smoke test [E]<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.067Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->════════════════════════════════════════════════════════════════════════════════════════════════════<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.067Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->  Counter increments smoke test<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.067Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->The test description was:<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.067Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#--><!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>&lt;fn&gt;</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->async_patch.dart<!--/-->:<!--#-->166<!--/-->:<!--#-->15<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>_startMicrotaskLoop</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->schedule_microtask.dart<!--/-->:<!--#-->49<!--/-->:<!--#-->5<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>_microtaskLoop</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->schedule_microtask.dart<!--/-->:<!--#-->40<!--/-->:<!--#-->11<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>callback</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->zone.dart<!--/-->:<!--#-->1248<!--/-->:<!--#-->23<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>runGuarded</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->zone.dart<!--/-->:<!--#-->1208<!--/-->:<!--#-->7<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>run</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->zone.dart<!--/-->:<!--#-->1300<!--/-->:<!--#-->19<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>_rootRun</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->zone.dart<!--/-->:<!--#-->1398<!--/-->:<!--#-->13<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>&lt;fn&gt;</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->zone.dart<!--/-->:<!--#-->1248<!--/-->:<!--#-->23<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>runGuarded</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->zone.dart<!--/-->:<!--#-->1208<!--/-->:<!--#-->7<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>run</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->zone.dart<!--/-->:<!--#-->1300<!--/-->:<!--#-->19<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>_rootRun</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->zone.dart<!--/-->:<!--#-->1390<!--/-->:<!--#-->47<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>&lt;fn&gt;</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->future.dart<!--/-->:<!--#-->277<!--/-->:<!--#-->37<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.066Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->https://sdk.zapp.run/flutter/workspace/build/sdk/packages/flutter_test/lib/src/binding.dart 1402:35                                                  &lt;fn&gt;<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>_async</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->async_patch.dart<!--/-->:<!--#-->123<!--/-->:<!--#-->5<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>runBody</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->async_patch.dart<!--/-->:<!--#-->84<!--/-->:<!--#-->54<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.066Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->https://sdk.zapp.run/flutter/workspace/build/sdk/packages/flutter_test/lib/src/binding.dart 1415:16                                                  &lt;fn&gt;<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>flushMicrotasks</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->fake_async.dart<!--/-->:<!--#-->197<!--/-->:<!--#-->32<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;flutter_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>&lt;fn&gt;</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->future_impl.dart<!--/-->:<!--#-->640<!--/-->:<!--#-->7<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>[_completeWithValue]</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->future_impl.dart<!--/-->:<!--#-->567<!--/-->:<!--#-->5<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>_propagateToListeners</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->future_impl.dart<!--/-->:<!--#-->796<!--/-->:<!--#-->13<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>handleValueCallback</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->future_impl.dart<!--/-->:<!--#-->767<!--/-->:<!--#-->44<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>handleValue</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->future_impl.dart<!--/-->:<!--#-->147<!--/-->:<!--#-->18<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>runUnary</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->zone.dart<!--/-->:<!--#-->1307<!--/-->:<!--#-->19<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>_rootRunUnary</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->zone.dart<!--/-->:<!--#-->1406<!--/-->:<!--#-->47<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>&lt;fn&gt;</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->async_patch.dart<!--/-->:<!--#-->45<!--/-->:<!--#-->50<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>&lt;fn&gt;</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->widget_test.dart<!--/-->:<!--#-->20<!--/-->:<!--#-->5<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;project&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.065Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->https://sdk.zapp.run/flutter/workspace/build/sdk/packages/flutter_test/lib/src/widget_tester.dart 460:16                                             expect$0<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>expect$1</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->expect.dart<!--/-->:<!--#-->46<!--/-->:<!--#-->3<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;flutter_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>_expect</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->expect.dart<!--/-->:<!--#-->129<!--/-->:<!--#-->3<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;flutter_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>fail</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->expect.dart<!--/-->:<!--#-->134<!--/-->:<!--#-->31<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;flutter_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><span class="pointer-events-none opacity-0">[00:00:00]</span>&nbsp;at&nbsp;<span>throw_</span>&nbsp;<span role="button" aria-label="Jump to source" class="float-right text-blue-500 hover:underline"><!--#-->errors.dart<!--/-->:<!--#-->266<!--/-->:<!--#-->49<!--/--></span><span class="float-right opacity-50"><!--#-->&lt;dart_sdk&gt;<!--/-->&nbsp;</span></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.063Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->When the exception was thrown, this was the stack:<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.063Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#--><!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.063Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->   Which: means none were found but one was expected<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.062Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->  Actual: _TextFinder:&lt;zero widgets with text "0" (ignoring offstage widgets)&gt;<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.062Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->Expected: exactly one matching node in the widget tree<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.062Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->The following TestFailure was thrown running a test:<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:13.062Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->13<!--/-->]</span><!--/-->&nbsp;<!--#-->══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════<!--/--></span></li><li data-level="log" class="hover:bg-zapp-border"><span><!--#--><span class="text-black opacity-50 dark:text-white" title="2025-05-17T23:36:10.536Z">[<!--#-->20<!--/-->:<!--#-->36<!--/-->:<!--#-->10<!--/-->]</span><!--/-->&nbsp;<!--#-->00:00 +0: Counter increments smoke test<!--/--></span></li><!--/--></ul></div></section></section><section class="relative col-start-6 col-end-7 overflow-hidden row-start-2 row-end-5"><div class="transition-opacity opacity-100"><div id="preview-progress" class="absolute inset-x-0 top-0 z-10 h-1"></div><div class="absolute inset-x-0 top-0 flex h-10 items-center gap-3 border-t-2 border-b-2 border-zapp-border bg-zapp-foreground px-3"><!--#--><div class="flex h-10 flex-shrink-0 items-center justify-center"><button class="h-5 w-5 opacity-50 transition-opacity hover:opacity-100" title="Go back"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg></button></div><!--/--><!--#--><div class="flex h-10 flex-shrink-0 items-center justify-center"><button class="h-5 w-5 opacity-50 transition-opacity hover:opacity-100" title="Go forward"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button></div><!--/--><!--#--><div class="flex h-10 flex-shrink-0 items-center justify-center"><button class="h-5 w-5 opacity-50 transition-opacity hover:opacity-100" title="Reload"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd"></path></svg></button></div><!--/--><!--#--><input type="text" class="w-full rounded-full border border-zapp-border bg-zapp-background px-3 py-1 text-sm tracking-wide text-opacity-70 focus:outline-none"><!--/--><!--#--><div class="flex h-10 flex-shrink-0 items-center justify-center"><button class="h-5 w-5 opacity-50 transition-opacity hover:opacity-100" title="Open in new window"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg></button></div><!--/--><!--#--><div class="flex h-10 flex-shrink-0 items-center justify-center"><button class="h-5 w-5 opacity-50 transition-opacity hover:opacity-100" title="QR Code"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3.75 2A1.75 1.75 0 002 3.75v3.5C2 8.216 2.784 9 3.75 9h3.5A1.75 1.75 0 009 7.25v-3.5A1.75 1.75 0 007.25 2h-3.5zM3.5 3.75a.25.25 0 01.25-.25h3.5a.25.25 0 01.25.25v3.5a.25.25 0 01-.25.25h-3.5a.25.25 0 01-.25-.25v-3.5zM3.75 11A1.75 1.75 0 002 12.75v3.5c0 .966.784 1.75 1.75 1.75h3.5A1.75 1.75 0 009 16.25v-3.5A1.75 1.75 0 007.25 11h-3.5zm-.25 1.75a.25.25 0 01.25-.25h3.5a.25.25 0 01.25.25v3.5a.25.25 0 01-.25.25h-3.5a.25.25 0 01-.25-.25v-3.5zm7.5-9c0-.966.784-1.75 1.75-1.75h3.5c.966 0 1.75.784 1.75 1.75v3.5A1.75 1.75 0 0116.25 9h-3.5A1.75 1.75 0 0111 7.25v-3.5zm1.75-.25a.25.25 0 00-.25.25v3.5c0 .138.112.25.25.25h3.5a.25.25 0 00.25-.25v-3.5a.25.25 0 00-.25-.25h-3.5zm-7.26 1a1 1 0 00-1 1v.01a1 1 0 001 1h.01a1 1 0 001-1V5.5a1 1 0 00-1-1h-.01zm9 0a1 1 0 00-1 1v.01a1 1 0 001 1h.01a1 1 0 001-1V5.5a1 1 0 00-1-1h-.01zm-9 9a1 1 0 00-1 1v.01a1 1 0 001 1h.01a1 1 0 001-1v-.01a1 1 0 00-1-1h-.01zm9 0a1 1 0 00-1 1v.01a1 1 0 001 1h.01a1 1 0 001-1v-.01a1 1 0 00-1-1h-.01zm-3.5-1.5a1 1 0 011-1H12a1 1 0 011 1v.01a1 1 0 01-1 1h-.01a1 1 0 01-1-1V12zm6-1a1 1 0 00-1 1v.01a1 1 0 001 1H17a1 1 0 001-1V12a1 1 0 00-1-1h-.01zm-1 6a1 1 0 011-1H17a1 1 0 011 1v.01a1 1 0 01-1 1h-.01a1 1 0 01-1-1V17zm-4-1a1 1 0 00-1 1v.01a1 1 0 001 1H12a1 1 0 001-1V17a1 1 0 00-1-1h-.01z" clip-rule="evenodd"></path></svg></button></div><!--/--></div><div class="absolute inset-x-0 top-10 bottom-0 bg-zapp-background"><iframe id="preview" class="bg-theme-background h-full w-full" allow="clipboard-read; clipboard-write" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-forms allow-modals" src="./Flutter - A new Flutter project. _ Zapp!_files/saved_resource.html" style="border: 0px;"></iframe><!--#--><div class="pointer-events-none absolute top-4 right-4 z-10 rounded bg-white/90 px-2 py-1 text-black" style="opacity: 0;"><!--#-->486<!--/--> x <!--#-->468<!--/--></div><!--/--></div></div></section><section class="relative col-span-full row-span-5"><footer class="grid h-full grid-cols-[auto,1fr] items-center border-t-2 border-zapp-border bg-zapp-foreground pl-2 pr-4 text-sm"><div class="flex flex-grow items-center gap-2"><!--#--><div class="inline-block rounded border-2 border-green-500 px-2 py-px text-sm font-bold uppercase text-green-500">Beta</div><!--/--><!--#--><!--/--><!--#--><button title="Toggle Zen Mode" class="h-5 w-5 transition-opacity hover:opacity-75 opacity-50"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path></svg></button><!--/--><!--#--><button title="Toggle Preview" class="relative top-[2px] h-5 w-5 opacity-75"><svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 1L1 2V14L2 15H14L15 14V2L14 1H2ZM2 14V2H9V14H2Z"></path></svg></button><!--/--><!--#--><!--/--></div><!--#--><div class="transition-opacity flex items-center justify-end gap-6 opacity-100"><button class="transition-opacity hover:opacity-75"><span>Ln <!--#-->0<!--/-->, Col <!--#-->0<!--/--></span><!--#--><!--/--></button><button class="transition-opacity hover:opacity-75">Key Bindings</button><button class="transition-opacity hover:opacity-75">View Shortcuts</button><button class="flex items-center gap-2 transition-opacity hover:opacity-75"><!--#--><span class="h-5 w-5"><svg viewBox="-30.5 0 317 317" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><defs><lineargradient x1="3.9517088%" y1="26.9930287%" x2="75.8970734%" y2="52.9192657%" id="linearGradient-1"><stop stop-color="#000000" offset="0%"></stop><stop stop-color="#000000" stop-opacity="0" offset="100%"></stop></lineargradient></defs><g><polygon fill="#47C5FB" points="157.665785 0.000549356223 0.000549356223 157.665785 48.8009614 206.466197 255.267708 0.000549356223"></polygon><polygon fill="#47C5FB" points="156.567183 145.396793 72.1487107 229.815265 121.132608 279.530905 169.842925 230.820587 255.267818 145.396793"></polygon><polygon fill="#00569E" points="121.133047 279.531124 158.214592 316.61267 255.267159 316.61267 169.842266 230.820807"></polygon><polygon fill="#00B5F8" points="71.5995742 230.364072 120.401085 181.562561 169.842046 230.821136 121.132827 279.531454"></polygon><polygon fill-opacity="0.8" fill="url(#linearGradient-1)" points="121.132827 279.531454 161.692896 266.072227 165.721875 234.941308"></polygon></g></svg></span><span>Flutter <!--#-->3.7.3<!--/--></span><!--/--><span>(<!--#-->4467087<!--/--> beta)</span></button></div><!--/--></footer></section></div><div class="mb-10" style="position: fixed; z-index: 9999; inset: 16px; pointer-events: none;"><style>.sldt-active{z-index:9999;}.sldt-active>*{pointer-events:auto;}</style><!--#--><!--/--></div></astro-island>
+    
+  
+<div></div><div class="monaco-aria-container"><div class="monaco-alert" role="alert" aria-atomic="true"></div><div class="monaco-alert" role="alert" aria-atomic="true"></div><div class="monaco-status" role="complementary" aria-live="polite" aria-atomic="true"></div><div class="monaco-status" role="complementary" aria-live="polite" aria-atomic="true"></div></div></body></html>

@@ -1,0 +1,189 @@
+function handleInit(event) {
+  const postHref = () => {
+    event.source.postMessage(
+      {
+        source: event.data.source,
+        zapp: true,
+        event: "href",
+        href: location.href,
+      },
+      "*"
+    );
+  };
+  postHref();
+  window.addEventListener("hashchange", postHref);
+  const pushState = history.pushState;
+  history.pushState = function () {
+    pushState.apply(history, arguments);
+    postHref();
+  };
+}
+function handleGo(event) {
+  history.go(event.data.delta);
+}
+function messageHandler(event) {
+  if (!event || !event.data || !event.data.zapp) {
+    return;
+  }
+  if (event.data?.event === "reload") window.location.reload();
+  if (event.data?.event === "init") handleInit(event);
+  if (event.data?.event === "go") handleGo(event);
+}
+function symbolicateStackTrace(stack) {
+  var newLines = [];
+  var firstLine = stack.split("\\n")[0];
+  var otherLines = stack.split("\\n").slice(1);
+  newLines.push(firstLine);
+  otherLines.forEach(function (line) {
+    var stackTrace = window.$dartStackTraceUtility.mapper("\\n" + line);
+    if (!stackTrace) {
+      if (!line.includes("dart_sdk.js") && !line.includes("flutter_sdk.js")) {
+        newLines.push(line);
+      }
+    } else {
+      newLines.push(stackTrace.trim());
+    }
+  });
+  return newLines.join("\\n");
+}
+window.onerror = function (message, url, lineNumber, columnNumber, error) {
+  window.__zappDidError = true;
+  // Error can be null when crossorigin not allowed.
+  // see https://blog.sentry.io/2016/05/17/what-is-script-error
+  if (error != null) {
+    var errorString = error.toString();
+    var stackTrace = symbolicateStackTrace(errorString);
+    parent.postMessage(
+      {
+        zapp: true,
+        type: "console.error",
+        data: JSON.stringify([stackTrace]),
+      },
+      "*"
+    );
+  }
+};
+window.addEventListener("unhandledrejection", function (event) {
+  // Error can be null when crossorigin not allowed.
+  // see https://blog.sentry.io/2016/05/17/what-is-script-error
+  if (event.reason != null) {
+    var errorString = event.reason.toString();
+    var stackTrace = symbolicateStackTrace(errorString);
+    parent.postMessage(
+      {
+        zapp: true,
+        type: "console.error",
+        data: JSON.stringify([...stackTrace.split("\\n")]),
+      },
+      "*"
+    );
+  }
+  event.preventDefault();
+});
+window.originalConsoleLog = console.log;
+console.log = function () {
+  if (
+    typeof arguments[0] == "string" &&
+    arguments[0].includes("Flutter Web Bootstrap: ")
+  ) {
+    return;
+  }
+  parent.postMessage(
+    {
+      zapp: true,
+      type: "console.log",
+      data: JSON.stringify([
+        Array.isArray(arguments)
+          ? arguments.join(" ")
+          : Object.values(arguments).join(" "),
+      ]),
+    },
+    "*"
+  );
+  originalConsoleLog.apply(console, arguments);
+};
+window.originalConsoleError = console.error;
+console.error = function () {
+  parent.postMessage(
+    { zapp: true, type: "console.error", data: JSON.stringify(arguments) },
+    "*"
+  );
+  originalConsoleError.apply(console, arguments);
+};
+window.originalConsoleWarn = console.warn;
+console.warn = function () {
+  if (
+    typeof arguments[0] == "string" &&
+    (arguments[0].includes("registerExtension()") ||
+      arguments[0].includes("postEvent()"))
+  ) {
+    return;
+  }
+  if (
+    typeof arguments[0] == "string" &&
+    arguments[0].includes("Font manifest does not exist at")
+  ) {
+    return;
+  }
+  if (window.$dartStackTraceUtility && window.$dartStackTraceUtility.ready) {
+    var newArgs = [];
+    for (var arg of arguments) {
+      if (
+        typeof arg == "string" &&
+        arg.includes("\\n") &&
+        arg.includes(" at ")
+      ) {
+        newArgs.push(symbolicateStackTrace(arg));
+      } else {
+        newArgs.push((arg + "").trim());
+      }
+    }
+    parent.postMessage(
+      {
+        zapp: true,
+        type: "console.warn",
+        data: JSON.stringify([...newArgs]),
+      },
+      "*"
+    );
+  } else {
+    parent.postMessage(
+      {
+        zapp: true,
+        type: "console.warn",
+        data: JSON.stringify([
+          Array.isArray(arguments)
+            ? arguments.join(" ")
+            : Object.values(arguments).join(" "),
+        ]),
+      },
+      "*"
+    );
+  }
+  originalConsoleWarn.apply(console, arguments);
+};
+window.addEventListener("load", function () {
+  window.addEventListener("message", messageHandler);
+});
+window.zappHandlerUserError = (e, s) => {
+  parent.postMessage(
+    {
+      zapp: true,
+      type: "console.error",
+      data: JSON.stringify([
+        ...(s ? [e, ...symbolicateStackTrace(s).split("\\n")] : [e]),
+      ]),
+    },
+    "*"
+  );
+};
+window.zappHandlerUserPrint = (line) => {
+  parent.postMessage(
+    {
+      zapp: true,
+      type: "console.log",
+      data: JSON.stringify([line.trim()]),
+    },
+    "*"
+  );
+};
