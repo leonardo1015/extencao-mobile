@@ -1,0 +1,43 @@
+{
+      // Use o IntelliSense para saber mais sobre os atributos possíveis.
+      // Focalizar para exibir as descrições dos atributos existentes.
+      // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+      "version": "0.2.0",
+      "configurations": [
+            {
+                  "name": "Flutter",
+                  "type": "dart",
+                  "request": "launch",
+                  "program": "lib/main.dart"
+            },
+            {
+                  "args": [
+                        "--extensionDevelopmentPath=${workspaceFolder}"
+                  ],
+                  "name": "Iniciar a Extensão",
+                  "outFiles": [
+                        "${workspaceFolder}/out/**/*.js"
+                  ],
+                  "preLaunchTask": "npm",
+                  "request": "launch",
+                  "type": "extensionHost"
+            },
+            {
+                  "name": "api",
+                  "request": "launch",
+                  "type": "dart"
+            },
+            {
+                  "name": "api (profile mode)",
+                  "request": "launch",
+                  "type": "dart",
+                  "flutterMode": "profile"
+            },
+            {
+                  "name": "api (release mode)",
+                  "request": "launch",
+                  "type": "dart",
+                  "flutterMode": "release"
+            }
+      ]
+}
